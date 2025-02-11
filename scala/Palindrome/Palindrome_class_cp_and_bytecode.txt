@@ -1,0 +1,190 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/Palindrome/Palindrome$.class
+  Last modified Feb 4, 2025; size 1477 bytes
+  SHA-256 checksum 0015e67648571dd3cae1c2cf3e37a46ec26c4e6f7e61f17ac4f258b66d99f4ea
+  Compiled from "Palindrome.scala"
+public final class Palindrome$ implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // Palindrome$
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 1, methods: 5, attributes: 2
+Constant pool:
+   #1 = Utf8               Palindrome$
+   #2 = Class              #1             // Palindrome$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               java/io/Serializable
+   #6 = Class              #5             // java/io/Serializable
+   #7 = Utf8               Palindrome.scala
+   #8 = Utf8               MODULE$
+   #9 = Utf8               LPalindrome$;
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = NameAndType        #10:#11        // "<init>":()V
+  #13 = Methodref          #4.#12         // java/lang/Object."<init>":()V
+  #14 = Utf8               this
+  #15 = Utf8               <clinit>
+  #16 = Methodref          #2.#12         // Palindrome$."<init>":()V
+  #17 = NameAndType        #8:#9          // MODULE$:LPalindrome$;
+  #18 = Fieldref           #2.#17         // Palindrome$.MODULE$:LPalindrome$;
+  #19 = Utf8               writeReplace
+  #20 = Utf8               ()Ljava/lang/Object;
+  #21 = Utf8               scala/runtime/ModuleSerializationProxy
+  #22 = Class              #21            // scala/runtime/ModuleSerializationProxy
+  #23 = Utf8               (Ljava/lang/Class;)V
+  #24 = NameAndType        #10:#23        // "<init>":(Ljava/lang/Class;)V
+  #25 = Methodref          #22.#24        // scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+  #26 = Utf8               isPalindrome
+  #27 = Utf8               (Ljava/lang/String;)Z
+  #28 = Utf8               str
+  #29 = Utf8               scala/collection/StringOps$
+  #30 = Class              #29            // scala/collection/StringOps$
+  #31 = Utf8               Lscala/collection/StringOps$;
+  #32 = NameAndType        #8:#31         // MODULE$:Lscala/collection/StringOps$;
+  #33 = Fieldref           #30.#32        // scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+  #34 = Utf8               scala/Predef$
+  #35 = Class              #34            // scala/Predef$
+  #36 = Utf8               Lscala/Predef$;
+  #37 = NameAndType        #8:#36         // MODULE$:Lscala/Predef$;
+  #38 = Fieldref           #35.#37        // scala/Predef$.MODULE$:Lscala/Predef$;
+  #39 = Utf8               augmentString
+  #40 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #41 = NameAndType        #39:#40        // augmentString:(Ljava/lang/String;)Ljava/lang/String;
+  #42 = Methodref          #35.#41        // scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+  #43 = Utf8               reverse$extension
+  #44 = NameAndType        #43:#40        // reverse$extension:(Ljava/lang/String;)Ljava/lang/String;
+  #45 = Methodref          #30.#44        // scala/collection/StringOps$.reverse$extension:(Ljava/lang/String;)Ljava/lang/String;
+  #46 = Utf8               equals
+  #47 = Utf8               (Ljava/lang/Object;)Z
+  #48 = NameAndType        #46:#47        // equals:(Ljava/lang/Object;)Z
+  #49 = Methodref          #4.#48         // java/lang/Object.equals:(Ljava/lang/Object;)Z
+  #50 = Utf8               Ljava/lang/String;
+  #51 = Utf8               java/lang/String
+  #52 = Class              #51            // java/lang/String
+  #53 = Utf8               main
+  #54 = Utf8               ([Ljava/lang/String;)V
+  #55 = Utf8               args
+  #56 = Utf8               hi
+  #57 = String             #56            // hi
+  #58 = NameAndType        #26:#27        // isPalindrome:(Ljava/lang/String;)Z
+  #59 = Methodref          #2.#58         // Palindrome$.isPalindrome:(Ljava/lang/String;)Z
+  #60 = Utf8               scala/runtime/BoxesRunTime
+  #61 = Class              #60            // scala/runtime/BoxesRunTime
+  #62 = Utf8               boxToBoolean
+  #63 = Utf8               (Z)Ljava/lang/Boolean;
+  #64 = NameAndType        #62:#63        // boxToBoolean:(Z)Ljava/lang/Boolean;
+  #65 = Methodref          #61.#64        // scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+  #66 = Utf8               println
+  #67 = Utf8               (Ljava/lang/Object;)V
+  #68 = NameAndType        #66:#67        // println:(Ljava/lang/Object;)V
+  #69 = Methodref          #35.#68        // scala/Predef$.println:(Ljava/lang/Object;)V
+  #70 = Utf8               ababa
+  #71 = String             #70            // ababa
+  #72 = Utf8               print
+  #73 = NameAndType        #72:#67        // print:(Ljava/lang/Object;)V
+  #74 = Methodref          #35.#73        // scala/Predef$.print:(Ljava/lang/Object;)V
+  #75 = Utf8               [Ljava/lang/String;
+  #76 = Utf8               Code
+  #77 = Utf8               LineNumberTable
+  #78 = Utf8               LocalVariableTable
+  #79 = Utf8               StackMapTable
+  #80 = Utf8               MethodParameters
+  #81 = Utf8               Signature
+  #82 = Utf8               SourceFile
+  #83 = Utf8               Scala
+{
+  public static final Palindrome$ MODULE$;
+    descriptor: LPalindrome$;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class Palindrome$
+         3: dup
+         4: invokespecial #16                 // Method "<init>":()V
+         7: putstatic     #18                 // Field MODULE$:LPalindrome$;
+        10: return
+      LineNumberTable:
+        line 2: 0
+
+  public boolean isPalindrome(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=2
+         0: aload_1
+         1: getstatic     #33                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+         4: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         7: aload_1
+         8: invokevirtual #42                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+        11: invokevirtual #45                 // Method scala/collection/StringOps$.reverse$extension:(Ljava/lang/String;)Ljava/lang/String;
+        14: astore_2
+        15: dup
+        16: ifnonnull     27
+        19: pop
+        20: aload_2
+        21: ifnull        34
+        24: goto          36
+        27: aload_2
+        28: invokevirtual #49                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+        31: ifeq          36
+        34: iconst_1
+        35: ireturn
+        36: iconst_0
+        37: ireturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 27
+          locals = [ class Palindrome$, class java/lang/String, class java/lang/String ]
+          stack = [ class java/lang/String ]
+        frame_type = 6 /* same */
+        frame_type = 1 /* same */
+      LineNumberTable:
+        line 2: 0
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      38     0  this   LPalindrome$;
+            0      38     1   str   Ljava/lang/String;
+    MethodParameters:
+      Name                           Flags
+      str                            final
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         3: aload_0
+         4: ldc           #57                 // String hi
+         6: invokevirtual #59                 // Method isPalindrome:(Ljava/lang/String;)Z
+         9: invokestatic  #65                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        12: invokevirtual #69                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        15: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        18: aload_0
+        19: ldc           #71                 // String ababa
+        21: invokevirtual #59                 // Method isPalindrome:(Ljava/lang/String;)Z
+        24: invokestatic  #65                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+        27: invokevirtual #74                 // Method scala/Predef$.print:(Ljava/lang/Object;)V
+        30: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 0
+        line 8: 15
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0  this   LPalindrome$;
+            0      31     1  args   [Ljava/lang/String;
+    Signature: #54                          // ([Ljava/lang/String;)V
+    MethodParameters:
+      Name                           Flags
+      args                           final
+}
+SourceFile: "Palindrome.scala"
+  Scala: length = 0x0 (unknown attribute)
+

@@ -1,0 +1,64 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/Palindrome/Palindrome.class
+  Last modified Feb 4, 2025; size 385 bytes
+  SHA-256 checksum 65b9fb73599574abf6f867f1cbfb082a9fc7ab72c617e937abb105170749d71f
+  Compiled from "Palindrome.scala"
+public final class Palindrome
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // Palindrome
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Utf8               Palindrome
+   #2 = Class              #1             // Palindrome
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Palindrome.scala
+   #6 = Utf8               isPalindrome
+   #7 = Utf8               (Ljava/lang/String;)Z
+   #8 = Utf8               Palindrome$
+   #9 = Class              #8             // Palindrome$
+  #10 = Utf8               MODULE$
+  #11 = Utf8               LPalindrome$;
+  #12 = NameAndType        #10:#11        // MODULE$:LPalindrome$;
+  #13 = Fieldref           #9.#12         // Palindrome$.MODULE$:LPalindrome$;
+  #14 = NameAndType        #6:#7          // isPalindrome:(Ljava/lang/String;)Z
+  #15 = Methodref          #9.#14         // Palindrome$.isPalindrome:(Ljava/lang/String;)Z
+  #16 = Utf8               main
+  #17 = Utf8               ([Ljava/lang/String;)V
+  #18 = NameAndType        #16:#17        // main:([Ljava/lang/String;)V
+  #19 = Methodref          #9.#18         // Palindrome$.main:([Ljava/lang/String;)V
+  #20 = Utf8               Code
+  #21 = Utf8               Signature
+  #22 = Utf8               SourceFile
+  #23 = Utf8               TASTY
+  #24 = Utf8               Scala
+{
+  public static boolean isPalindrome(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field Palindrome$.MODULE$:LPalindrome$;
+         3: aload_0
+         4: invokevirtual #15                 // Method Palindrome$.isPalindrome:(Ljava/lang/String;)Z
+         7: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field Palindrome$.MODULE$:LPalindrome$;
+         3: aload_0
+         4: invokevirtual #19                 // Method Palindrome$.main:([Ljava/lang/String;)V
+         7: return
+    Signature: #17                          // ([Ljava/lang/String;)V
+}
+SourceFile: "Palindrome.scala"
+  TASTY: length = 0x10 (unknown attribute)
+   00 B6 A2 99 D6 BA E4 C5 00 40 E2 6F 32 B1 C6 80
+
+  Scala: length = 0x0 (unknown attribute)
+

@@ -1,0 +1,16 @@
+Compiled from "PalindromeRecursive.scala"
+public final class PalindromeRecursive {
+  public static boolean isPalindrome(java.lang.String);
+    Code:
+       0: getstatic     #13                 // Field PalindromeRecursive$.MODULE$:LPalindromeRecursive$;
+       3: aload_0
+       4: invokevirtual #15                 // Method PalindromeRecursive$.isPalindrome:(Ljava/lang/String;)Z
+       7: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #13                 // Field PalindromeRecursive$.MODULE$:LPalindromeRecursive$;
+       3: aload_0
+       4: invokevirtual #19                 // Method PalindromeRecursive$.main:([Ljava/lang/String;)V
+       7: return
+}

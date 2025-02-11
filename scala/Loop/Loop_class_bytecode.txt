@@ -1,0 +1,61 @@
+Compiled from "Loop.scala"
+public final class Loop$ implements java.io.Serializable {
+  public static final Loop$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #2                  // class Loop$
+       3: dup
+       4: invokespecial #26                 // Method "<init>":()V
+       7: putstatic     #28                 // Field MODULE$:LLoop$;
+      10: return
+
+  public void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #44                 // Method java/lang/System.nanoTime:()J
+       3: lstore_2
+       4: lconst_0
+       5: invokestatic  #50                 // Method scala/runtime/LongRef.create:(J)Lscala/runtime/LongRef;
+       8: astore        4
+      10: new           #52                 // class scala/runtime/RichLong
+      13: dup
+      14: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      17: lconst_0
+      18: invokevirtual #61                 // Method scala/Predef$.longWrapper:(J)J
+      21: invokespecial #64                 // Method scala/runtime/RichLong."<init>":(J)V
+      24: ldc2_w        #65                 // long 1000000000l
+      27: invokestatic  #72                 // Method scala/runtime/BoxesRunTime.boxToLong:(J)Ljava/lang/Long;
+      30: invokevirtual #76                 // Method scala/runtime/RichLong.until:(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;
+      33: aload_0
+      34: aload         4
+      36: invokedynamic #94,  0             // InvokeDynamic #0:apply$mcVJ$sp:(LLoop$;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVJ$sp;
+      41: invokevirtual #98                 // Method scala/collection/immutable/NumericRange$Exclusive.foreach:(Lscala/Function1;)V
+      44: invokestatic  #44                 // Method java/lang/System.nanoTime:()J
+      47: lstore        5
+      49: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      52: new           #100                // class java/lang/StringBuilder
+      55: dup
+      56: ldc           #101                // int 5
+      58: invokespecial #104                // Method java/lang/StringBuilder."<init>":(I)V
+      61: ldc           #106                // String Sum:
+      63: invokevirtual #110                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      66: aload         4
+      68: getfield      #114                // Field scala/runtime/LongRef.elem:J
+      71: invokevirtual #117                // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+      74: invokevirtual #121                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      77: invokevirtual #125                // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      80: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      83: new           #100                // class java/lang/StringBuilder
+      86: dup
+      87: ldc           #126                // int 16
+      89: invokespecial #104                // Method java/lang/StringBuilder."<init>":(I)V
+      92: ldc           #128                // String Execution Time:
+      94: invokevirtual #110                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      97: lload         5
+      99: lload_2
+     100: lsub
+     101: invokevirtual #117                // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+     104: invokevirtual #121                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     107: invokevirtual #125                // Method scala/Predef$.println:(Ljava/lang/Object;)V
+     110: return
+}

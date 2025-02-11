@@ -1,0 +1,64 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/PalindromeRecursive/PalindromeRecursive.class
+  Last modified Feb 10, 2025; size 421 bytes
+  SHA-256 checksum fe4b1ea08e1465f5d9ac9ce87416ae54f273005f1f26026282ac8ec024ff4233
+  Compiled from "PalindromeRecursive.scala"
+public final class PalindromeRecursive
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // PalindromeRecursive
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Utf8               PalindromeRecursive
+   #2 = Class              #1             // PalindromeRecursive
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               PalindromeRecursive.scala
+   #6 = Utf8               isPalindrome
+   #7 = Utf8               (Ljava/lang/String;)Z
+   #8 = Utf8               PalindromeRecursive$
+   #9 = Class              #8             // PalindromeRecursive$
+  #10 = Utf8               MODULE$
+  #11 = Utf8               LPalindromeRecursive$;
+  #12 = NameAndType        #10:#11        // MODULE$:LPalindromeRecursive$;
+  #13 = Fieldref           #9.#12         // PalindromeRecursive$.MODULE$:LPalindromeRecursive$;
+  #14 = NameAndType        #6:#7          // isPalindrome:(Ljava/lang/String;)Z
+  #15 = Methodref          #9.#14         // PalindromeRecursive$.isPalindrome:(Ljava/lang/String;)Z
+  #16 = Utf8               main
+  #17 = Utf8               ([Ljava/lang/String;)V
+  #18 = NameAndType        #16:#17        // main:([Ljava/lang/String;)V
+  #19 = Methodref          #9.#18         // PalindromeRecursive$.main:([Ljava/lang/String;)V
+  #20 = Utf8               Code
+  #21 = Utf8               Signature
+  #22 = Utf8               SourceFile
+  #23 = Utf8               TASTY
+  #24 = Utf8               Scala
+{
+  public static boolean isPalindrome(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field PalindromeRecursive$.MODULE$:LPalindromeRecursive$;
+         3: aload_0
+         4: invokevirtual #15                 // Method PalindromeRecursive$.isPalindrome:(Ljava/lang/String;)Z
+         7: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field PalindromeRecursive$.MODULE$:LPalindromeRecursive$;
+         3: aload_0
+         4: invokevirtual #19                 // Method PalindromeRecursive$.main:([Ljava/lang/String;)V
+         7: return
+    Signature: #17                          // ([Ljava/lang/String;)V
+}
+SourceFile: "PalindromeRecursive.scala"
+  TASTY: length = 0x10 (unknown attribute)
+   00 0A C5 45 83 22 97 B5 00 55 C7 76 A1 74 BC 80
+
+  Scala: length = 0x0 (unknown attribute)
+

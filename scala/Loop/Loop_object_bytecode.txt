@@ -1,0 +1,9 @@
+Compiled from "Loop.scala"
+public final class Loop {
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #13                 // Field Loop$.MODULE$:LLoop$;
+       3: aload_0
+       4: invokevirtual #15                 // Method Loop$.main:([Ljava/lang/String;)V
+       7: return
+}

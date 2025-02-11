@@ -1,0 +1,16 @@
+Compiled from "Palindrome.scala"
+public final class Palindrome {
+  public static boolean isPalindrome(java.lang.String);
+    Code:
+       0: getstatic     #13                 // Field Palindrome$.MODULE$:LPalindrome$;
+       3: aload_0
+       4: invokevirtual #15                 // Method Palindrome$.isPalindrome:(Ljava/lang/String;)Z
+       7: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #13                 // Field Palindrome$.MODULE$:LPalindrome$;
+       3: aload_0
+       4: invokevirtual #19                 // Method Palindrome$.main:([Ljava/lang/String;)V
+       7: return
+}

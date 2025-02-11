@@ -1,0 +1,50 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/Loop/Loop.class
+  Last modified Feb 10, 2025; size 278 bytes
+  SHA-256 checksum c203a99f3e46c3207ab8aa28de44b6187d0ef82c71c737a07440330d157403cd
+  Compiled from "Loop.scala"
+public final class Loop
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // Loop
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 1, attributes: 3
+Constant pool:
+   #1 = Utf8               Loop
+   #2 = Class              #1             // Loop
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Loop.scala
+   #6 = Utf8               main
+   #7 = Utf8               ([Ljava/lang/String;)V
+   #8 = Utf8               Loop$
+   #9 = Class              #8             // Loop$
+  #10 = Utf8               MODULE$
+  #11 = Utf8               LLoop$;
+  #12 = NameAndType        #10:#11        // MODULE$:LLoop$;
+  #13 = Fieldref           #9.#12         // Loop$.MODULE$:LLoop$;
+  #14 = NameAndType        #6:#7          // main:([Ljava/lang/String;)V
+  #15 = Methodref          #9.#14         // Loop$.main:([Ljava/lang/String;)V
+  #16 = Utf8               Code
+  #17 = Utf8               Signature
+  #18 = Utf8               SourceFile
+  #19 = Utf8               TASTY
+  #20 = Utf8               Scala
+{
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field Loop$.MODULE$:LLoop$;
+         3: aload_0
+         4: invokevirtual #15                 // Method Loop$.main:([Ljava/lang/String;)V
+         7: return
+    Signature: #7                           // ([Ljava/lang/String;)V
+}
+SourceFile: "Loop.scala"
+  TASTY: length = 0x10 (unknown attribute)
+   00 37 3B 88 82 47 9B AB 00 90 7E 40 FD 26 A7 98
+
+  Scala: length = 0x0 (unknown attribute)
+

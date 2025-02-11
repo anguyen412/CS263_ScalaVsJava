@@ -1,0 +1,48 @@
+Compiled from "ArrayMod.scala"
+public final class ArrayMod$ implements java.io.Serializable {
+  public static final ArrayMod$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #2                  // class ArrayMod$
+       3: dup
+       4: invokespecial #21                 // Method "<init>":()V
+       7: putstatic     #23                 // Field MODULE$:LArrayMod$;
+      10: return
+
+  public scala.collection.immutable.List<java.lang.Object> doubleEachElement(scala.collection.immutable.List<java.lang.Object>);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokedynamic #52,  0             // InvokeDynamic #0:apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
+       7: invokevirtual #58                 // Method scala/collection/immutable/List.map:(Lscala/Function1;)Lscala/collection/immutable/List;
+      10: areturn
+
+  public void main(java.lang.String[]);
+    Code:
+       0: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: aload_0
+       4: getstatic     #72                 // Field scala/package$.MODULE$:Lscala/package$;
+       7: invokevirtual #76                 // Method scala/package$.List:()Lscala/collection/immutable/List$;
+      10: getstatic     #81                 // Field scala/runtime/ScalaRunTime$.MODULE$:Lscala/runtime/ScalaRunTime$;
+      13: iconst_3
+      14: newarray       int
+      16: dup
+      17: iconst_0
+      18: iconst_1
+      19: iastore
+      20: dup
+      21: iconst_1
+      22: iconst_2
+      23: iastore
+      24: dup
+      25: iconst_2
+      26: iconst_3
+      27: iastore
+      28: invokevirtual #85                 // Method scala/runtime/ScalaRunTime$.wrapIntArray:([I)Lscala/collection/immutable/ArraySeq;
+      31: invokevirtual #91                 // Method scala/collection/immutable/List$.apply:(Lscala/collection/immutable/Seq;)Ljava/lang/Object;
+      34: checkcast     #54                 // class scala/collection/immutable/List
+      37: invokevirtual #93                 // Method doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+      40: invokevirtual #97                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      43: return
+}

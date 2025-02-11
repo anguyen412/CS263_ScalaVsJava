@@ -1,0 +1,273 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/Loop/Loop$.class
+  Last modified Feb 10, 2025; size 2870 bytes
+  SHA-256 checksum 4655d14842a6cc485337bd78bc41bb05f5ff1697c8f8fee9e8480c4faff50015
+  Compiled from "Loop.scala"
+public final class Loop$ implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // Loop$
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 1, methods: 6, attributes: 4
+Constant pool:
+    #1 = Utf8               Loop$
+    #2 = Class              #1            // Loop$
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               java/io/Serializable
+    #6 = Class              #5            // java/io/Serializable
+    #7 = Utf8               Loop.scala
+    #8 = Utf8               java/lang/invoke/MethodHandles$Lookup
+    #9 = Class              #8            // java/lang/invoke/MethodHandles$Lookup
+   #10 = Utf8               java/lang/invoke/MethodHandles
+   #11 = Class              #10           // java/lang/invoke/MethodHandles
+   #12 = Utf8               Lookup
+   #13 = Utf8               scala/collection/immutable/NumericRange$Exclusive
+   #14 = Class              #13           // scala/collection/immutable/NumericRange$Exclusive
+   #15 = Utf8               scala/collection/immutable/NumericRange
+   #16 = Class              #15           // scala/collection/immutable/NumericRange
+   #17 = Utf8               Exclusive
+   #18 = Utf8               MODULE$
+   #19 = Utf8               LLoop$;
+   #20 = Utf8               <init>
+   #21 = Utf8               ()V
+   #22 = NameAndType        #20:#21       // "<init>":()V
+   #23 = Methodref          #4.#22        // java/lang/Object."<init>":()V
+   #24 = Utf8               this
+   #25 = Utf8               <clinit>
+   #26 = Methodref          #2.#22        // Loop$."<init>":()V
+   #27 = NameAndType        #18:#19       // MODULE$:LLoop$;
+   #28 = Fieldref           #2.#27        // Loop$.MODULE$:LLoop$;
+   #29 = Utf8               writeReplace
+   #30 = Utf8               ()Ljava/lang/Object;
+   #31 = Utf8               scala/runtime/ModuleSerializationProxy
+   #32 = Class              #31           // scala/runtime/ModuleSerializationProxy
+   #33 = Utf8               (Ljava/lang/Class;)V
+   #34 = NameAndType        #20:#33       // "<init>":(Ljava/lang/Class;)V
+   #35 = Methodref          #32.#34       // scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+   #36 = Utf8               main
+   #37 = Utf8               ([Ljava/lang/String;)V
+   #38 = Utf8               args
+   #39 = Utf8               java/lang/System
+   #40 = Class              #39           // java/lang/System
+   #41 = Utf8               nanoTime
+   #42 = Utf8               ()J
+   #43 = NameAndType        #41:#42       // nanoTime:()J
+   #44 = Methodref          #40.#43       // java/lang/System.nanoTime:()J
+   #45 = Utf8               scala/runtime/LongRef
+   #46 = Class              #45           // scala/runtime/LongRef
+   #47 = Utf8               create
+   #48 = Utf8               (J)Lscala/runtime/LongRef;
+   #49 = NameAndType        #47:#48       // create:(J)Lscala/runtime/LongRef;
+   #50 = Methodref          #46.#49       // scala/runtime/LongRef.create:(J)Lscala/runtime/LongRef;
+   #51 = Utf8               scala/runtime/RichLong
+   #52 = Class              #51           // scala/runtime/RichLong
+   #53 = Utf8               scala/Predef$
+   #54 = Class              #53           // scala/Predef$
+   #55 = Utf8               Lscala/Predef$;
+   #56 = NameAndType        #18:#55       // MODULE$:Lscala/Predef$;
+   #57 = Fieldref           #54.#56       // scala/Predef$.MODULE$:Lscala/Predef$;
+   #58 = Utf8               longWrapper
+   #59 = Utf8               (J)J
+   #60 = NameAndType        #58:#59       // longWrapper:(J)J
+   #61 = Methodref          #54.#60       // scala/Predef$.longWrapper:(J)J
+   #62 = Utf8               (J)V
+   #63 = NameAndType        #20:#62       // "<init>":(J)V
+   #64 = Methodref          #52.#63       // scala/runtime/RichLong."<init>":(J)V
+   #65 = Long               1000000000l
+   #67 = Utf8               scala/runtime/BoxesRunTime
+   #68 = Class              #67           // scala/runtime/BoxesRunTime
+   #69 = Utf8               boxToLong
+   #70 = Utf8               (J)Ljava/lang/Long;
+   #71 = NameAndType        #69:#70       // boxToLong:(J)Ljava/lang/Long;
+   #72 = Methodref          #68.#71       // scala/runtime/BoxesRunTime.boxToLong:(J)Ljava/lang/Long;
+   #73 = Utf8               until
+   #74 = Utf8               (Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;
+   #75 = NameAndType        #73:#74       // until:(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;
+   #76 = Methodref          #52.#75       // scala/runtime/RichLong.until:(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;
+   #77 = MethodType         #62           //  (J)V
+   #78 = Utf8               main$$anonfun$1
+   #79 = Utf8               (Lscala/runtime/LongRef;J)V
+   #80 = NameAndType        #78:#79       // main$$anonfun$1:(Lscala/runtime/LongRef;J)V
+   #81 = Methodref          #2.#80        // Loop$.main$$anonfun$1:(Lscala/runtime/LongRef;J)V
+   #82 = MethodHandle       7:#81         // REF_invokeSpecial Loop$.main$$anonfun$1:(Lscala/runtime/LongRef;J)V
+   #83 = Integer            1
+   #84 = Utf8               java/lang/invoke/LambdaMetafactory
+   #85 = Class              #84           // java/lang/invoke/LambdaMetafactory
+   #86 = Utf8               altMetafactory
+   #87 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #88 = NameAndType        #86:#87       // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #89 = Methodref          #85.#88       // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #90 = MethodHandle       6:#89         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #91 = Utf8               apply$mcVJ$sp
+   #92 = Utf8               (LLoop$;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVJ$sp;
+   #93 = NameAndType        #91:#92       // apply$mcVJ$sp:(LLoop$;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVJ$sp;
+   #94 = InvokeDynamic      #0:#93        // #0:apply$mcVJ$sp:(LLoop$;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVJ$sp;
+   #95 = Utf8               foreach
+   #96 = Utf8               (Lscala/Function1;)V
+   #97 = NameAndType        #95:#96       // foreach:(Lscala/Function1;)V
+   #98 = Methodref          #14.#97       // scala/collection/immutable/NumericRange$Exclusive.foreach:(Lscala/Function1;)V
+   #99 = Utf8               java/lang/StringBuilder
+  #100 = Class              #99           // java/lang/StringBuilder
+  #101 = Integer            5
+  #102 = Utf8               (I)V
+  #103 = NameAndType        #20:#102      // "<init>":(I)V
+  #104 = Methodref          #100.#103     // java/lang/StringBuilder."<init>":(I)V
+  #105 = Utf8               Sum:
+  #106 = String             #105          // Sum:
+  #107 = Utf8               append
+  #108 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #109 = NameAndType        #107:#108     // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #110 = Methodref          #100.#109     // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #111 = Utf8               elem
+  #112 = Utf8               J
+  #113 = NameAndType        #111:#112     // elem:J
+  #114 = Fieldref           #46.#113      // scala/runtime/LongRef.elem:J
+  #115 = Utf8               (J)Ljava/lang/StringBuilder;
+  #116 = NameAndType        #107:#115     // append:(J)Ljava/lang/StringBuilder;
+  #117 = Methodref          #100.#116     // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+  #118 = Utf8               toString
+  #119 = Utf8               ()Ljava/lang/String;
+  #120 = NameAndType        #118:#119     // toString:()Ljava/lang/String;
+  #121 = Methodref          #100.#120     // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #122 = Utf8               println
+  #123 = Utf8               (Ljava/lang/Object;)V
+  #124 = NameAndType        #122:#123     // println:(Ljava/lang/Object;)V
+  #125 = Methodref          #54.#124      // scala/Predef$.println:(Ljava/lang/Object;)V
+  #126 = Integer            16
+  #127 = Utf8               Execution Time:
+  #128 = String             #127          // Execution Time:
+  #129 = Utf8               startTime
+  #130 = Utf8               sum
+  #131 = Utf8               Lscala/runtime/LongRef;
+  #132 = Utf8               endTime
+  #133 = Utf8               [Ljava/lang/String;
+  #134 = Utf8               sum$1
+  #135 = Utf8               i
+  #136 = Utf8               $deserializeLambda$
+  #137 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #138 = Utf8               scala/runtime/LambdaDeserialize
+  #139 = Class              #138          // scala/runtime/LambdaDeserialize
+  #140 = Utf8               bootstrap
+  #141 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #142 = NameAndType        #140:#141     // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #143 = Methodref          #139.#142     // scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #144 = MethodHandle       6:#143        // REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #145 = Utf8               lambdaDeserialize
+  #146 = NameAndType        #145:#137     // lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #147 = InvokeDynamic      #1:#146       // #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #148 = Utf8               Code
+  #149 = Utf8               LineNumberTable
+  #150 = Utf8               LocalVariableTable
+  #151 = Utf8               Signature
+  #152 = Utf8               MethodParameters
+  #153 = Utf8               InnerClasses
+  #154 = Utf8               SourceFile
+  #155 = Utf8               BootstrapMethods
+  #156 = Utf8               Scala
+{
+  public static final Loop$ MODULE$;
+    descriptor: LLoop$;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class Loop$
+         3: dup
+         4: invokespecial #26                 // Method "<init>":()V
+         7: putstatic     #28                 // Field MODULE$:LLoop$;
+        10: return
+      LineNumberTable:
+        line 2: 0
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=7, args_size=2
+         0: invokestatic  #44                 // Method java/lang/System.nanoTime:()J
+         3: lstore_2
+         4: lconst_0
+         5: invokestatic  #50                 // Method scala/runtime/LongRef.create:(J)Lscala/runtime/LongRef;
+         8: astore        4
+        10: new           #52                 // class scala/runtime/RichLong
+        13: dup
+        14: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        17: lconst_0
+        18: invokevirtual #61                 // Method scala/Predef$.longWrapper:(J)J
+        21: invokespecial #64                 // Method scala/runtime/RichLong."<init>":(J)V
+        24: ldc2_w        #65                 // long 1000000000l
+        27: invokestatic  #72                 // Method scala/runtime/BoxesRunTime.boxToLong:(J)Ljava/lang/Long;
+        30: invokevirtual #76                 // Method scala/runtime/RichLong.until:(Ljava/lang/Object;)Lscala/collection/immutable/NumericRange$Exclusive;
+        33: aload_0
+        34: aload         4
+        36: invokedynamic #94,  0             // InvokeDynamic #0:apply$mcVJ$sp:(LLoop$;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVJ$sp;
+        41: invokevirtual #98                 // Method scala/collection/immutable/NumericRange$Exclusive.foreach:(Lscala/Function1;)V
+        44: invokestatic  #44                 // Method java/lang/System.nanoTime:()J
+        47: lstore        5
+        49: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        52: new           #100                // class java/lang/StringBuilder
+        55: dup
+        56: ldc           #101                // int 5
+        58: invokespecial #104                // Method java/lang/StringBuilder."<init>":(I)V
+        61: ldc           #106                // String Sum:
+        63: invokevirtual #110                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        66: aload         4
+        68: getfield      #114                // Field scala/runtime/LongRef.elem:J
+        71: invokevirtual #117                // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        74: invokevirtual #121                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        77: invokevirtual #125                // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        80: getstatic     #57                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        83: new           #100                // class java/lang/StringBuilder
+        86: dup
+        87: ldc           #126                // int 16
+        89: invokespecial #104                // Method java/lang/StringBuilder."<init>":(I)V
+        92: ldc           #128                // String Execution Time:
+        94: invokevirtual #110                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        97: lload         5
+        99: lload_2
+       100: lsub
+       101: invokevirtual #117                // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+       104: invokevirtual #121                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       107: invokevirtual #125                // Method scala/Predef$.println:(Ljava/lang/Object;)V
+       110: return
+      LineNumberTable:
+        line 2: 0
+        line 3: 0
+        line 4: 4
+        line 5: 10
+        line 7: 33
+        line 8: 44
+        line 9: 49
+        line 10: 80
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4     107     2 startTime   J
+           10     101     4   sum   Lscala/runtime/LongRef;
+           49      62     5 endTime   J
+            0     111     0  this   LLoop$;
+            0     111     1  args   [Ljava/lang/String;
+    Signature: #37                          // ([Ljava/lang/String;)V
+    MethodParameters:
+      Name                           Flags
+      args                           final
+}
+InnerClasses:
+  public static final #12= #9 of #11;     // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+  public static #17= #14 of #16;          // Exclusive=class scala/collection/immutable/NumericRange$Exclusive of class scala/collection/immutable/NumericRange
+SourceFile: "Loop.scala"
+BootstrapMethods:
+  0: #90 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #77 (J)V
+      #82 REF_invokeSpecial Loop$.main$$anonfun$1:(Lscala/runtime/LongRef;J)V
+      #77 (J)V
+      #83 1
+  1: #144 REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #82 REF_invokeSpecial Loop$.main$$anonfun$1:(Lscala/runtime/LongRef;J)V
+  Scala: length = 0x0 (unknown attribute)
+

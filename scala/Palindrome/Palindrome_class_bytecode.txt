@@ -1,0 +1,51 @@
+Compiled from "Palindrome.scala"
+public final class Palindrome$ implements java.io.Serializable {
+  public static final Palindrome$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #2                  // class Palindrome$
+       3: dup
+       4: invokespecial #16                 // Method "<init>":()V
+       7: putstatic     #18                 // Field MODULE$:LPalindrome$;
+      10: return
+
+  public boolean isPalindrome(java.lang.String);
+    Code:
+       0: aload_1
+       1: getstatic     #33                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+       4: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       7: aload_1
+       8: invokevirtual #42                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+      11: invokevirtual #45                 // Method scala/collection/StringOps$.reverse$extension:(Ljava/lang/String;)Ljava/lang/String;
+      14: astore_2
+      15: dup
+      16: ifnonnull     27
+      19: pop
+      20: aload_2
+      21: ifnull        34
+      24: goto          36
+      27: aload_2
+      28: invokevirtual #49                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      31: ifeq          36
+      34: iconst_1
+      35: ireturn
+      36: iconst_0
+      37: ireturn
+
+  public void main(java.lang.String[]);
+    Code:
+       0: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: aload_0
+       4: ldc           #57                 // String hi
+       6: invokevirtual #59                 // Method isPalindrome:(Ljava/lang/String;)Z
+       9: invokestatic  #65                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+      12: invokevirtual #69                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      15: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      18: aload_0
+      19: ldc           #71                 // String ababa
+      21: invokevirtual #59                 // Method isPalindrome:(Ljava/lang/String;)Z
+      24: invokestatic  #65                 // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+      27: invokevirtual #74                 // Method scala/Predef$.print:(Ljava/lang/Object;)V
+      30: return
+}
