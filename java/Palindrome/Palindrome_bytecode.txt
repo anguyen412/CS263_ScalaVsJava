@@ -1,0 +1,57 @@
+Compiled from "Palindrome.java"
+final class Palindrome {
+  Palindrome();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static boolean isPalindrome(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #7                  // Method java/lang/String.length:()I
+       4: istore_1
+       5: iconst_0
+       6: istore_2
+       7: iconst_0
+       8: istore_3
+       9: iload_3
+      10: iload_1
+      11: if_icmpgt     54
+      14: iload_1
+      15: ifeq          23
+      18: iload_1
+      19: iconst_1
+      20: if_icmpne     28
+      23: iconst_1
+      24: istore_2
+      25: goto          45
+      28: aload_0
+      29: iload_3
+      30: invokevirtual #13                 // Method java/lang/String.charAt:(I)C
+      33: aload_0
+      34: iload_1
+      35: iconst_1
+      36: isub
+      37: invokevirtual #13                 // Method java/lang/String.charAt:(I)C
+      40: if_icmpeq     45
+      43: iconst_0
+      44: istore_2
+      45: iinc          1, -1
+      48: iinc          3, 1
+      51: goto          9
+      54: iload_2
+      55: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #23                 // String hi
+       5: invokestatic  #25                 // Method isPalindrome:(Ljava/lang/String;)Z
+       8: invokevirtual #31                 // Method java/io/PrintStream.println:(Z)V
+      11: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      14: ldc           #37                 // String ababa
+      16: invokestatic  #25                 // Method isPalindrome:(Ljava/lang/String;)Z
+      19: invokevirtual #31                 // Method java/io/PrintStream.println:(Z)V
+      22: return
+}

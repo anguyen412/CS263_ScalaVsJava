@@ -1,0 +1,43 @@
+Compiled from "Loop.java"
+public class Loop {
+  public Loop();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #7                  // Method java/lang/System.nanoTime:()J
+       3: lstore_1
+       4: lconst_0
+       5: lstore_3
+       6: lconst_0
+       7: lstore        5
+       9: lload         5
+      11: ldc2_w        #13                 // long 1000000000l
+      14: lcmp
+      15: ifge          32
+      18: lload_3
+      19: lload         5
+      21: ladd
+      22: lstore_3
+      23: lload         5
+      25: lconst_1
+      26: ladd
+      27: lstore        5
+      29: goto          9
+      32: invokestatic  #7                  // Method java/lang/System.nanoTime:()J
+      35: lstore        5
+      37: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      40: lload_3
+      41: invokedynamic #19,  0             // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+      46: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      49: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      52: lload         5
+      54: lload_1
+      55: lsub
+      56: invokedynamic #29,  0             // InvokeDynamic #1:makeConcatWithConstants:(J)Ljava/lang/String;
+      61: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      64: return
+}

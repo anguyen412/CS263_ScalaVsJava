@@ -1,0 +1,53 @@
+Compiled from "PalindromeRecursive.java"
+final class PalindromeRecursive {
+  PalindromeRecursive();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static boolean isPalindrome(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #7                  // Method java/lang/String.length:()I
+       4: iconst_1
+       5: if_icmpeq     15
+       8: aload_0
+       9: invokevirtual #7                  // Method java/lang/String.length:()I
+      12: ifne          17
+      15: iconst_1
+      16: ireturn
+      17: aload_0
+      18: iconst_0
+      19: invokevirtual #13                 // Method java/lang/String.charAt:(I)C
+      22: aload_0
+      23: aload_0
+      24: invokevirtual #7                  // Method java/lang/String.length:()I
+      27: iconst_1
+      28: isub
+      29: invokevirtual #13                 // Method java/lang/String.charAt:(I)C
+      32: if_icmpne     50
+      35: aload_0
+      36: iconst_1
+      37: aload_0
+      38: invokevirtual #7                  // Method java/lang/String.length:()I
+      41: iconst_1
+      42: isub
+      43: invokevirtual #17                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+      46: invokestatic  #21                 // Method isPalindrome:(Ljava/lang/String;)Z
+      49: ireturn
+      50: iconst_0
+      51: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #33                 // String hi
+       5: invokestatic  #21                 // Method isPalindrome:(Ljava/lang/String;)Z
+       8: invokevirtual #35                 // Method java/io/PrintStream.println:(Z)V
+      11: getstatic     #27                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      14: ldc           #41                 // String ababa
+      16: invokestatic  #21                 // Method isPalindrome:(Ljava/lang/String;)Z
+      19: invokevirtual #35                 // Method java/io/PrintStream.println:(Z)V
+      22: return
+}
