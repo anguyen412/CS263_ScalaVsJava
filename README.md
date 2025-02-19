@@ -26,3 +26,10 @@ for java:
 javap -c [CLASSNAME].class > [CLASSNAME]_bytecode.txt
 javap -v [CLASSNAME].class > [CLASSNAME]_cp_and_bytecode.txt
 ```
+
+
+For using JMH:<br>
+From the highest level of the directory (where the pom.xml file is, in the example it would be the folder first-benchmark) run the command `mvn clean install` <br>
+Then run the tests using: `java -jar target/benchmarks.jar` <br>
+<br>
+Test should be written as methods inside src/main/java/jenkov/MyBenchmark.java <br>
