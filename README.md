@@ -11,6 +11,8 @@ Scala version:
 Scala code runner version 3.3.0 -- Copyright 2002-2023, LAMP/EPFL
 ```
 
+
+Commands for dumping the bytecode:<br>
 for scala:
 ```
 javap -c [CLASSNAME].class > [CLASSNAME]_object_bytecode.txt
