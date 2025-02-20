@@ -40,13 +40,35 @@ import java.util.concurrent.TimeUnit;
 
 public class MyBenchmark {
 
+    static int[] doubleEachElement(int[] list) {
+        for (int i = 0; i < list.length; i++) {
+            list[i] = list[i] * 2;
+        }
+        return list;
+    }
+
     @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.NANOSECONDS)
-    public void testMethod() {
-        // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
+    public void testArrayMod() {
+        /* This is a demo/sample template for building your JMH benchmarks. Edit as needed.
         // Put your benchmark code here.
         int a = 1;
         int b = 2;
         int sum = a + b;
+        */
+
+        int[] list = {1, 2, 3};
+        doubleEachElement(list);
+        for (int item : list) {
+            //System.out.println(item);
+        }
+    }
+
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.NANOSECONDS)
+    public void testLoop() {
+        long sum = 0;
+        for (long i = 0; i < 1_000_000_000L; i++) {
+            sum += i;
+        }
     }
 
 }
