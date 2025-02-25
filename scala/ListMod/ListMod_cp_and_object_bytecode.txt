@@ -1,0 +1,66 @@
+Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/ListMod/ListMod.class
+  Last modified Feb 24, 2025; size 544 bytes
+  SHA-256 checksum bddc62d63f1001d08ee365205a47e694e097233ceef45504afe0f259828103b2
+  Compiled from "ListMod.scala"
+public final class ListMod
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // ListMod
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Utf8               ListMod
+   #2 = Class              #1             // ListMod
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               ListMod.scala
+   #6 = Utf8               doubleEachElement
+   #7 = Utf8               (Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+   #8 = Utf8               (Lscala/collection/immutable/List<Ljava/lang/Object;>;)Lscala/collection/immutable/List<Ljava/lang/Object;>;
+   #9 = Utf8               ListMod$
+  #10 = Class              #9             // ListMod$
+  #11 = Utf8               MODULE$
+  #12 = Utf8               LListMod$;
+  #13 = NameAndType        #11:#12        // MODULE$:LListMod$;
+  #14 = Fieldref           #10.#13        // ListMod$.MODULE$:LListMod$;
+  #15 = NameAndType        #6:#7          // doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  #16 = Methodref          #10.#15        // ListMod$.doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  #17 = Utf8               main
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = NameAndType        #17:#18        // main:([Ljava/lang/String;)V
+  #20 = Methodref          #10.#19        // ListMod$.main:([Ljava/lang/String;)V
+  #21 = Utf8               Code
+  #22 = Utf8               Signature
+  #23 = Utf8               SourceFile
+  #24 = Utf8               TASTY
+  #25 = Utf8               Scala
+{
+  public static scala.collection.immutable.List<java.lang.Object> doubleEachElement(scala.collection.immutable.List<java.lang.Object>);
+    descriptor: (Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #14                 // Field ListMod$.MODULE$:LListMod$;
+         3: aload_0
+         4: invokevirtual #16                 // Method ListMod$.doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+         7: areturn
+    Signature: #8                           // (Lscala/collection/immutable/List<Ljava/lang/Object;>;)Lscala/collection/immutable/List<Ljava/lang/Object;>;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #14                 // Field ListMod$.MODULE$:LListMod$;
+         3: aload_0
+         4: invokevirtual #20                 // Method ListMod$.main:([Ljava/lang/String;)V
+         7: return
+    Signature: #18                          // ([Ljava/lang/String;)V
+}
+SourceFile: "ListMod.scala"
+  TASTY: length = 0x10 (unknown attribute)
+   00 E3 3E FC 80 8F 6E B2 00 30 53 79 19 09 B0 C8
+
+  Scala: length = 0x0 (unknown attribute)
+

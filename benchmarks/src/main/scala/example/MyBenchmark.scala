@@ -16,4 +16,8 @@ class MyBenchmark {
     blackHole.consume(sum)
     sum
   }
+  
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+//  def testArrayMod(): List[Int] = {
+//  }
 }

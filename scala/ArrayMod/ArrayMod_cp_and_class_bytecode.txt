@@ -1,6 +1,6 @@
 Classfile /Users/sarah/Desktop/UCSB/classes/W25CS263/CS263_ScalaVsJava/scala/ArrayMod/ArrayMod$.class
-  Last modified Feb 10, 2025; size 2666 bytes
-  SHA-256 checksum d4cb2b65a836637e3f27350aa3a4f0bcce77bffd8d2ce3af9d312cd3092f46ef
+  Last modified Feb 24, 2025; size 2848 bytes
+  SHA-256 checksum cefc16465a0176a489bb84279bcdb6d844eae08bd82d39f430e5642828b58b74
   Compiled from "ArrayMod.scala"
 public final class ArrayMod$ implements java.io.Serializable
   minor version: 0
@@ -8,7 +8,7 @@ public final class ArrayMod$ implements java.io.Serializable
   flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
   this_class: #2                          // ArrayMod$
   super_class: #4                         // java/lang/Object
-  interfaces: 1, fields: 1, methods: 7, attributes: 4
+  interfaces: 1, fields: 1, methods: 8, attributes: 4
 Constant pool:
     #1 = Utf8               ArrayMod$
     #2 = Class              #1            // ArrayMod$
@@ -41,96 +41,116 @@ Constant pool:
    #29 = NameAndType        #15:#28       // "<init>":(Ljava/lang/Class;)V
    #30 = Methodref          #27.#29       // scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
    #31 = Utf8               doubleEachElement
-   #32 = Utf8               (Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
-   #33 = Utf8               (Lscala/collection/immutable/List<Ljava/lang/Object;>;)Lscala/collection/immutable/List<Ljava/lang/Object;>;
-   #34 = Utf8               list
-   #35 = Utf8               (I)I
-   #36 = MethodType         #35           //  (I)I
-   #37 = Utf8               doubleEachElement$$anonfun$1
-   #38 = NameAndType        #37:#35       // doubleEachElement$$anonfun$1:(I)I
-   #39 = Methodref          #2.#38        // ArrayMod$.doubleEachElement$$anonfun$1:(I)I
-   #40 = MethodHandle       7:#39         // REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
-   #41 = Integer            1
-   #42 = Utf8               java/lang/invoke/LambdaMetafactory
-   #43 = Class              #42           // java/lang/invoke/LambdaMetafactory
-   #44 = Utf8               altMetafactory
-   #45 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
-   #46 = NameAndType        #44:#45       // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
-   #47 = Methodref          #43.#46       // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
-   #48 = MethodHandle       6:#47         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
-   #49 = Utf8               apply$mcII$sp
-   #50 = Utf8               (LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
-   #51 = NameAndType        #49:#50       // apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
-   #52 = InvokeDynamic      #0:#51        // #0:apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
-   #53 = Utf8               scala/collection/immutable/List
-   #54 = Class              #53           // scala/collection/immutable/List
-   #55 = Utf8               map
-   #56 = Utf8               (Lscala/Function1;)Lscala/collection/immutable/List;
-   #57 = NameAndType        #55:#56       // map:(Lscala/Function1;)Lscala/collection/immutable/List;
-   #58 = Methodref          #54.#57       // scala/collection/immutable/List.map:(Lscala/Function1;)Lscala/collection/immutable/List;
-   #59 = Utf8               Lscala/collection/immutable/List;
-   #60 = Utf8               main
-   #61 = Utf8               ([Ljava/lang/String;)V
-   #62 = Utf8               args
-   #63 = Utf8               scala/Predef$
-   #64 = Class              #63           // scala/Predef$
-   #65 = Utf8               Lscala/Predef$;
-   #66 = NameAndType        #13:#65       // MODULE$:Lscala/Predef$;
-   #67 = Fieldref           #64.#66       // scala/Predef$.MODULE$:Lscala/Predef$;
-   #68 = Utf8               scala/package$
-   #69 = Class              #68           // scala/package$
-   #70 = Utf8               Lscala/package$;
-   #71 = NameAndType        #13:#70       // MODULE$:Lscala/package$;
-   #72 = Fieldref           #69.#71       // scala/package$.MODULE$:Lscala/package$;
-   #73 = Utf8               List
-   #74 = Utf8               ()Lscala/collection/immutable/List$;
-   #75 = NameAndType        #73:#74       // List:()Lscala/collection/immutable/List$;
-   #76 = Methodref          #69.#75       // scala/package$.List:()Lscala/collection/immutable/List$;
-   #77 = Utf8               scala/runtime/ScalaRunTime$
-   #78 = Class              #77           // scala/runtime/ScalaRunTime$
-   #79 = Utf8               Lscala/runtime/ScalaRunTime$;
-   #80 = NameAndType        #13:#79       // MODULE$:Lscala/runtime/ScalaRunTime$;
-   #81 = Fieldref           #78.#80       // scala/runtime/ScalaRunTime$.MODULE$:Lscala/runtime/ScalaRunTime$;
-   #82 = Utf8               wrapIntArray
-   #83 = Utf8               ([I)Lscala/collection/immutable/ArraySeq;
-   #84 = NameAndType        #82:#83       // wrapIntArray:([I)Lscala/collection/immutable/ArraySeq;
-   #85 = Methodref          #78.#84       // scala/runtime/ScalaRunTime$.wrapIntArray:([I)Lscala/collection/immutable/ArraySeq;
-   #86 = Utf8               scala/collection/immutable/List$
-   #87 = Class              #86           // scala/collection/immutable/List$
-   #88 = Utf8               apply
-   #89 = Utf8               (Lscala/collection/immutable/Seq;)Ljava/lang/Object;
-   #90 = NameAndType        #88:#89       // apply:(Lscala/collection/immutable/Seq;)Ljava/lang/Object;
-   #91 = Methodref          #87.#90       // scala/collection/immutable/List$.apply:(Lscala/collection/immutable/Seq;)Ljava/lang/Object;
-   #92 = NameAndType        #31:#32       // doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
-   #93 = Methodref          #2.#92        // ArrayMod$.doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
-   #94 = Utf8               println
-   #95 = Utf8               (Ljava/lang/Object;)V
-   #96 = NameAndType        #94:#95       // println:(Ljava/lang/Object;)V
-   #97 = Methodref          #64.#96       // scala/Predef$.println:(Ljava/lang/Object;)V
-   #98 = Utf8               [Ljava/lang/String;
-   #99 = Utf8               x
-  #100 = Utf8               I
-  #101 = Utf8               $deserializeLambda$
-  #102 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
-  #103 = Utf8               scala/runtime/LambdaDeserialize
-  #104 = Class              #103          // scala/runtime/LambdaDeserialize
-  #105 = Utf8               bootstrap
-  #106 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
-  #107 = NameAndType        #105:#106     // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
-  #108 = Methodref          #104.#107     // scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
-  #109 = MethodHandle       6:#108        // REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
-  #110 = Utf8               lambdaDeserialize
-  #111 = NameAndType        #110:#102     // lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
-  #112 = InvokeDynamic      #1:#111       // #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
-  #113 = Utf8               Code
-  #114 = Utf8               LineNumberTable
-  #115 = Utf8               LocalVariableTable
-  #116 = Utf8               Signature
-  #117 = Utf8               MethodParameters
-  #118 = Utf8               InnerClasses
-  #119 = Utf8               SourceFile
-  #120 = Utf8               BootstrapMethods
-  #121 = Utf8               Scala
+   #32 = Utf8               ([I)[I
+   #33 = Utf8               array
+   #34 = Utf8               scala/Predef$
+   #35 = Class              #34           // scala/Predef$
+   #36 = Utf8               Lscala/Predef$;
+   #37 = NameAndType        #13:#36       // MODULE$:Lscala/Predef$;
+   #38 = Fieldref           #35.#37       // scala/Predef$.MODULE$:Lscala/Predef$;
+   #39 = Utf8               intArrayOps
+   #40 = Utf8               ([I)Ljava/lang/Object;
+   #41 = NameAndType        #39:#40       // intArrayOps:([I)Ljava/lang/Object;
+   #42 = Methodref          #35.#41       // scala/Predef$.intArrayOps:([I)Ljava/lang/Object;
+   #43 = Utf8               scala/collection/ArrayOps$
+   #44 = Class              #43           // scala/collection/ArrayOps$
+   #45 = Utf8               Lscala/collection/ArrayOps$;
+   #46 = NameAndType        #13:#45       // MODULE$:Lscala/collection/ArrayOps$;
+   #47 = Fieldref           #44.#46       // scala/collection/ArrayOps$.MODULE$:Lscala/collection/ArrayOps$;
+   #48 = Utf8               (I)I
+   #49 = MethodType         #48           //  (I)I
+   #50 = Utf8               doubleEachElement$$anonfun$1
+   #51 = NameAndType        #50:#48       // doubleEachElement$$anonfun$1:(I)I
+   #52 = Methodref          #2.#51        // ArrayMod$.doubleEachElement$$anonfun$1:(I)I
+   #53 = MethodHandle       7:#52         // REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
+   #54 = Integer            1
+   #55 = Utf8               java/lang/invoke/LambdaMetafactory
+   #56 = Class              #55           // java/lang/invoke/LambdaMetafactory
+   #57 = Utf8               altMetafactory
+   #58 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #59 = NameAndType        #57:#58       // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #60 = Methodref          #56.#59       // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #61 = MethodHandle       6:#60         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #62 = Utf8               apply$mcII$sp
+   #63 = Utf8               (LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
+   #64 = NameAndType        #62:#63       // apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
+   #65 = InvokeDynamic      #0:#64        // #0:apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
+   #66 = Utf8               scala/reflect/ClassTag$
+   #67 = Class              #66           // scala/reflect/ClassTag$
+   #68 = Utf8               Lscala/reflect/ClassTag$;
+   #69 = NameAndType        #13:#68       // MODULE$:Lscala/reflect/ClassTag$;
+   #70 = Fieldref           #67.#69       // scala/reflect/ClassTag$.MODULE$:Lscala/reflect/ClassTag$;
+   #71 = Utf8               java/lang/Integer
+   #72 = Class              #71           // java/lang/Integer
+   #73 = Utf8               TYPE
+   #74 = Utf8               Ljava/lang/Class;
+   #75 = NameAndType        #73:#74       // TYPE:Ljava/lang/Class;
+   #76 = Fieldref           #72.#75       // java/lang/Integer.TYPE:Ljava/lang/Class;
+   #77 = Utf8               apply
+   #78 = Utf8               (Ljava/lang/Class;)Lscala/reflect/ClassTag;
+   #79 = NameAndType        #77:#78       // apply:(Ljava/lang/Class;)Lscala/reflect/ClassTag;
+   #80 = Methodref          #67.#79       // scala/reflect/ClassTag$.apply:(Ljava/lang/Class;)Lscala/reflect/ClassTag;
+   #81 = Utf8               map$extension
+   #82 = Utf8               (Ljava/lang/Object;Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;
+   #83 = NameAndType        #81:#82       // map$extension:(Ljava/lang/Object;Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;
+   #84 = Methodref          #44.#83       // scala/collection/ArrayOps$.map$extension:(Ljava/lang/Object;Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;
+   #85 = Utf8               [I
+   #86 = Class              #85           // "[I"
+   #87 = Utf8               main
+   #88 = Utf8               ([Ljava/lang/String;)V
+   #89 = Utf8               args
+   #90 = NameAndType        #31:#32       // doubleEachElement:([I)[I
+   #91 = Methodref          #2.#90        // ArrayMod$.doubleEachElement:([I)[I
+   #92 = Utf8               (I)V
+   #93 = MethodType         #92           //  (I)V
+   #94 = Utf8               main$$anonfun$1
+   #95 = NameAndType        #94:#92       // main$$anonfun$1:(I)V
+   #96 = Methodref          #2.#95        // ArrayMod$.main$$anonfun$1:(I)V
+   #97 = MethodHandle       7:#96         // REF_invokeSpecial ArrayMod$.main$$anonfun$1:(I)V
+   #98 = Utf8               apply$mcVI$sp
+   #99 = Utf8               (LArrayMod$;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+  #100 = NameAndType        #98:#99       // apply$mcVI$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+  #101 = InvokeDynamic      #1:#100       // #1:apply$mcVI$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+  #102 = Utf8               foreach$extension
+  #103 = Utf8               (Ljava/lang/Object;Lscala/Function1;)V
+  #104 = NameAndType        #102:#103     // foreach$extension:(Ljava/lang/Object;Lscala/Function1;)V
+  #105 = Methodref          #44.#104      // scala/collection/ArrayOps$.foreach$extension:(Ljava/lang/Object;Lscala/Function1;)V
+  #106 = Utf8               result
+  #107 = Utf8               [Ljava/lang/String;
+  #108 = Utf8               _$1
+  #109 = Utf8               I
+  #110 = Utf8               e
+  #111 = Utf8               scala/runtime/BoxesRunTime
+  #112 = Class              #111          // scala/runtime/BoxesRunTime
+  #113 = Utf8               boxToInteger
+  #114 = Utf8               (I)Ljava/lang/Integer;
+  #115 = NameAndType        #113:#114     // boxToInteger:(I)Ljava/lang/Integer;
+  #116 = Methodref          #112.#115     // scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+  #117 = Utf8               println
+  #118 = Utf8               (Ljava/lang/Object;)V
+  #119 = NameAndType        #117:#118     // println:(Ljava/lang/Object;)V
+  #120 = Methodref          #35.#119      // scala/Predef$.println:(Ljava/lang/Object;)V
+  #121 = Utf8               $deserializeLambda$
+  #122 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #123 = Utf8               scala/runtime/LambdaDeserialize
+  #124 = Class              #123          // scala/runtime/LambdaDeserialize
+  #125 = Utf8               bootstrap
+  #126 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #127 = NameAndType        #125:#126     // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #128 = Methodref          #124.#127     // scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #129 = MethodHandle       6:#128        // REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #130 = Utf8               lambdaDeserialize
+  #131 = NameAndType        #130:#122     // lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #132 = InvokeDynamic      #2:#131       // #2:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #133 = Utf8               Code
+  #134 = Utf8               LineNumberTable
+  #135 = Utf8               LocalVariableTable
+  #136 = Utf8               Signature
+  #137 = Utf8               MethodParameters
+  #138 = Utf8               InnerClasses
+  #139 = Utf8               SourceFile
+  #140 = Utf8               BootstrapMethods
+  #141 = Utf8               Scala
 {
   public static final ArrayMod$ MODULE$;
     descriptor: LArrayMod$;
@@ -149,66 +169,79 @@ Constant pool:
       LineNumberTable:
         line 2: 0
 
-  public scala.collection.immutable.List<java.lang.Object> doubleEachElement(scala.collection.immutable.List<java.lang.Object>);
-    descriptor: (Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  public int[] doubleEachElement(int[]);
+    descriptor: ([I)[I
     flags: (0x0001) ACC_PUBLIC
     Code:
-      stack=2, locals=2, args_size=2
-         0: aload_1
-         1: aload_0
-         2: invokedynamic #52,  0             // InvokeDynamic #0:apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
-         7: invokevirtual #58                 // Method scala/collection/immutable/List.map:(Lscala/Function1;)Lscala/collection/immutable/List;
-        10: areturn
+      stack=5, locals=3, args_size=2
+         0: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         3: aload_1
+         4: invokevirtual #42                 // Method scala/Predef$.intArrayOps:([I)Ljava/lang/Object;
+         7: astore_2
+         8: getstatic     #47                 // Field scala/collection/ArrayOps$.MODULE$:Lscala/collection/ArrayOps$;
+        11: aload_2
+        12: aload_0
+        13: invokedynamic #65,  0             // InvokeDynamic #0:apply$mcII$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcII$sp;
+        18: getstatic     #70                 // Field scala/reflect/ClassTag$.MODULE$:Lscala/reflect/ClassTag$;
+        21: getstatic     #76                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+        24: invokevirtual #80                 // Method scala/reflect/ClassTag$.apply:(Ljava/lang/Class;)Lscala/reflect/ClassTag;
+        27: invokevirtual #84                 // Method scala/collection/ArrayOps$.map$extension:(Ljava/lang/Object;Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;
+        30: checkcast     #86                 // class "[I"
+        33: areturn
       LineNumberTable:
         line 2: 0
         line 3: 0
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      11     0  this   LArrayMod$;
-            0      11     1  list   Lscala/collection/immutable/List;
-    Signature: #33                          // (Lscala/collection/immutable/List<Ljava/lang/Object;>;)Lscala/collection/immutable/List<Ljava/lang/Object;>;
+            0      34     0  this   LArrayMod$;
+            0      34     1 array   [I
+    Signature: #32                          // ([I)[I
     MethodParameters:
       Name                           Flags
-      list                           final
+      array                          final
 
   public void main(java.lang.String[]);
     descriptor: ([Ljava/lang/String;)V
     flags: (0x0001) ACC_PUBLIC
     Code:
-      stack=8, locals=2, args_size=2
-         0: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-         3: aload_0
-         4: getstatic     #72                 // Field scala/package$.MODULE$:Lscala/package$;
-         7: invokevirtual #76                 // Method scala/package$.List:()Lscala/collection/immutable/List$;
-        10: getstatic     #81                 // Field scala/runtime/ScalaRunTime$.MODULE$:Lscala/runtime/ScalaRunTime$;
-        13: iconst_3
-        14: newarray       int
-        16: dup
-        17: iconst_0
-        18: iconst_1
-        19: iastore
-        20: dup
-        21: iconst_1
-        22: iconst_2
-        23: iastore
-        24: dup
-        25: iconst_2
-        26: iconst_3
-        27: iastore
-        28: invokevirtual #85                 // Method scala/runtime/ScalaRunTime$.wrapIntArray:([I)Lscala/collection/immutable/ArraySeq;
-        31: invokevirtual #91                 // Method scala/collection/immutable/List$.apply:(Lscala/collection/immutable/Seq;)Ljava/lang/Object;
-        34: checkcast     #54                 // class scala/collection/immutable/List
-        37: invokevirtual #93                 // Method doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
-        40: invokevirtual #97                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-        43: return
+      stack=5, locals=4, args_size=2
+         0: aload_0
+         1: iconst_3
+         2: newarray       int
+         4: dup
+         5: iconst_0
+         6: iconst_1
+         7: iastore
+         8: dup
+         9: iconst_1
+        10: iconst_2
+        11: iastore
+        12: dup
+        13: iconst_2
+        14: iconst_3
+        15: iastore
+        16: invokevirtual #91                 // Method doubleEachElement:([I)[I
+        19: astore_2
+        20: getstatic     #38                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        23: aload_2
+        24: invokevirtual #42                 // Method scala/Predef$.intArrayOps:([I)Ljava/lang/Object;
+        27: astore_3
+        28: getstatic     #47                 // Field scala/collection/ArrayOps$.MODULE$:Lscala/collection/ArrayOps$;
+        31: aload_3
+        32: aload_0
+        33: invokedynamic #101,  0            // InvokeDynamic #1:apply$mcVI$sp:(LArrayMod$;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+        38: invokevirtual #105                // Method scala/collection/ArrayOps$.foreach$extension:(Ljava/lang/Object;Lscala/Function1;)V
+        41: return
       LineNumberTable:
         line 6: 0
         line 7: 0
+        line 8: 20
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      44     0  this   LArrayMod$;
-            0      44     1  args   [Ljava/lang/String;
-    Signature: #61                          // ([Ljava/lang/String;)V
+           20      22     2 result   [I
+            0      42     0  this   LArrayMod$;
+            0      42     1  args   [Ljava/lang/String;
+    Signature: #88                          // ([Ljava/lang/String;)V
     MethodParameters:
       Name                           Flags
       args                           final
@@ -217,14 +250,21 @@ InnerClasses:
   public static final #12= #9 of #11;     // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
 SourceFile: "ArrayMod.scala"
 BootstrapMethods:
-  0: #48 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  0: #61 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
     Method arguments:
-      #36 (I)I
-      #40 REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
-      #36 (I)I
-      #41 1
-  1: #109 REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+      #49 (I)I
+      #53 REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
+      #49 (I)I
+      #54 1
+  1: #61 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
     Method arguments:
-      #40 REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
+      #93 (I)V
+      #97 REF_invokeSpecial ArrayMod$.main$$anonfun$1:(I)V
+      #93 (I)V
+      #54 1
+  2: #129 REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #53 REF_invokeSpecial ArrayMod$.doubleEachElement$$anonfun$1:(I)I
+      #97 REF_invokeSpecial ArrayMod$.main$$anonfun$1:(I)V
   Scala: length = 0x0 (unknown attribute)
 

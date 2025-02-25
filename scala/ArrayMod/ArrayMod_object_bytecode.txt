@@ -1,16 +1,16 @@
 Compiled from "ArrayMod.scala"
 public final class ArrayMod {
-  public static scala.collection.immutable.List<java.lang.Object> doubleEachElement(scala.collection.immutable.List<java.lang.Object>);
+  public static int[] doubleEachElement(int[]);
     Code:
-       0: getstatic     #14                 // Field ArrayMod$.MODULE$:LArrayMod$;
+       0: getstatic     #13                 // Field ArrayMod$.MODULE$:LArrayMod$;
        3: aload_0
-       4: invokevirtual #16                 // Method ArrayMod$.doubleEachElement:(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+       4: invokevirtual #15                 // Method ArrayMod$.doubleEachElement:([I)[I
        7: areturn
 
   public static void main(java.lang.String[]);
     Code:
-       0: getstatic     #14                 // Field ArrayMod$.MODULE$:LArrayMod$;
+       0: getstatic     #13                 // Field ArrayMod$.MODULE$:LArrayMod$;
        3: aload_0
-       4: invokevirtual #20                 // Method ArrayMod$.main:([Ljava/lang/String;)V
+       4: invokevirtual #19                 // Method ArrayMod$.main:([Ljava/lang/String;)V
        7: return
 }
