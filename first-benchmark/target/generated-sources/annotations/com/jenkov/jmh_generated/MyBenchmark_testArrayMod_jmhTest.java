@@ -32,6 +32,7 @@ import org.openjdk.jmh.results.ScalarResult;
 import org.openjdk.jmh.results.AggregationPolicy;
 import org.openjdk.jmh.runner.FailureAssistException;
 
+import com.jenkov.jmh_generated.MyBenchmark_ArrayModState_jmhType;
 import com.jenkov.jmh_generated.MyBenchmark_jmhType;
 public final class MyBenchmark_testArrayMod_jmhTest {
 
@@ -69,23 +70,24 @@ public final class MyBenchmark_testArrayMod_jmhTest {
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
             MyBenchmark_jmhType l_mybenchmark0_0 = _jmh_tryInit_f_mybenchmark0_0(control);
+            MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1 = _jmh_tryInit_f_arraymodstate1_1(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_mybenchmark0_0.testArrayMod();
+                blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                 res.allOps++;
             }
 
             notifyControl.startMeasurement = true;
-            testArrayMod_thrpt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_mybenchmark0_0);
+            testArrayMod_thrpt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_arraymodstate1_1, l_mybenchmark0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_mybenchmark0_0.testArrayMod();
+                    blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -94,6 +96,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
+                f_arraymodstate1_1 = null;
                 f_mybenchmark0_0 = null;
             }
             res.allOps += res.measuredOps;
@@ -111,12 +114,12 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void testArrayMod_thrpt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
+    public static void testArrayMod_thrpt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
         long operations = 0;
         long realTime = 0;
         result.startTime = System.nanoTime();
         do {
-            l_mybenchmark0_0.testArrayMod();
+            blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
             operations++;
         } while(!control.isDone);
         result.stopTime = System.nanoTime();
@@ -136,23 +139,24 @@ public final class MyBenchmark_testArrayMod_jmhTest {
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
             MyBenchmark_jmhType l_mybenchmark0_0 = _jmh_tryInit_f_mybenchmark0_0(control);
+            MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1 = _jmh_tryInit_f_arraymodstate1_1(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_mybenchmark0_0.testArrayMod();
+                blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                 res.allOps++;
             }
 
             notifyControl.startMeasurement = true;
-            testArrayMod_avgt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_mybenchmark0_0);
+            testArrayMod_avgt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_arraymodstate1_1, l_mybenchmark0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_mybenchmark0_0.testArrayMod();
+                    blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -161,6 +165,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
+                f_arraymodstate1_1 = null;
                 f_mybenchmark0_0 = null;
             }
             res.allOps += res.measuredOps;
@@ -178,12 +183,12 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void testArrayMod_avgt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
+    public static void testArrayMod_avgt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
         long operations = 0;
         long realTime = 0;
         result.startTime = System.nanoTime();
         do {
-            l_mybenchmark0_0.testArrayMod();
+            blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
             operations++;
         } while(!control.isDone);
         result.stopTime = System.nanoTime();
@@ -203,13 +208,14 @@ public final class MyBenchmark_testArrayMod_jmhTest {
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
             MyBenchmark_jmhType l_mybenchmark0_0 = _jmh_tryInit_f_mybenchmark0_0(control);
+            MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1 = _jmh_tryInit_f_arraymodstate1_1(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_mybenchmark0_0.testArrayMod();
+                blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                 res.allOps++;
             }
 
@@ -218,12 +224,12 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             int batchSize = iterationParams.getBatchSize();
             int opsPerInv = benchmarkParams.getOpsPerInvocation();
             SampleBuffer buffer = new SampleBuffer();
-            testArrayMod_sample_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, buffer, targetSamples, opsPerInv, batchSize, l_mybenchmark0_0);
+            testArrayMod_sample_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, buffer, targetSamples, opsPerInv, batchSize, l_arraymodstate1_1, l_mybenchmark0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_mybenchmark0_0.testArrayMod();
+                    blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -232,6 +238,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
+                f_arraymodstate1_1 = null;
                 f_mybenchmark0_0 = null;
             }
             res.allOps += res.measuredOps * batchSize;
@@ -246,7 +253,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void testArrayMod_sample_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, SampleBuffer buffer, int targetSamples, long opsPerInv, int batchSize, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
+    public static void testArrayMod_sample_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, SampleBuffer buffer, int targetSamples, long opsPerInv, int batchSize, MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
         long realTime = 0;
         long operations = 0;
         int rnd = (int)System.nanoTime();
@@ -261,7 +268,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             }
             for (int b = 0; b < batchSize; b++) {
                 if (control.volatileSpoiler) return;
-                l_mybenchmark0_0.testArrayMod();
+                blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
             }
             if (sample) {
                 buffer.add((System.nanoTime() - time) / opsPerInv);
@@ -289,6 +296,7 @@ public final class MyBenchmark_testArrayMod_jmhTest {
         }
         if (threadParams.getSubgroupIndex() == 0) {
             MyBenchmark_jmhType l_mybenchmark0_0 = _jmh_tryInit_f_mybenchmark0_0(control);
+            MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1 = _jmh_tryInit_f_arraymodstate1_1(control);
 
             control.preSetup();
 
@@ -296,10 +304,11 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             notifyControl.startMeasurement = true;
             RawResults res = new RawResults();
             int batchSize = iterationParams.getBatchSize();
-            testArrayMod_ss_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, batchSize, l_mybenchmark0_0);
+            testArrayMod_ss_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, batchSize, l_arraymodstate1_1, l_mybenchmark0_0);
             control.preTearDown();
 
             if (control.isLastIteration()) {
+                f_arraymodstate1_1 = null;
                 f_mybenchmark0_0 = null;
             }
             int opsPerInv = control.benchmarkParams.getOpsPerInvocation();
@@ -312,17 +321,29 @@ public final class MyBenchmark_testArrayMod_jmhTest {
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void testArrayMod_ss_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, int batchSize, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
+    public static void testArrayMod_ss_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, int batchSize, MyBenchmark_ArrayModState_jmhType l_arraymodstate1_1, MyBenchmark_jmhType l_mybenchmark0_0) throws Throwable {
         long realTime = 0;
         result.startTime = System.nanoTime();
         for (int b = 0; b < batchSize; b++) {
             if (control.volatileSpoiler) return;
-            l_mybenchmark0_0.testArrayMod();
+            blackhole.consume(l_mybenchmark0_0.testArrayMod(l_arraymodstate1_1));
         }
         result.stopTime = System.nanoTime();
         result.realTime = realTime;
     }
 
+    
+    MyBenchmark_ArrayModState_jmhType f_arraymodstate1_1;
+    
+    MyBenchmark_ArrayModState_jmhType _jmh_tryInit_f_arraymodstate1_1(InfraControl control) throws Throwable {
+        if (control.isFailing) throw new FailureAssistException();
+        MyBenchmark_ArrayModState_jmhType val = f_arraymodstate1_1;
+        if (val == null) {
+            val = new MyBenchmark_ArrayModState_jmhType();
+            f_arraymodstate1_1 = val;
+        }
+        return val;
+    }
     
     MyBenchmark_jmhType f_mybenchmark0_0;
     

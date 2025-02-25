@@ -5,3 +5,5 @@ dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,com/jenkov/MyBenchmark.testArrayMod
 inline,com/jenkov/MyBenchmark.testLoop
+inline,com/jenkov/MyBenchmark.testPalindrome
+inline,com/jenkov/MyBenchmark.testPalindromeRecurisve
