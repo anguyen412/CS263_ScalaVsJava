@@ -1,2 +1,3 @@
 .DS_Store
 *.tasty
+/first-benchmark/target
