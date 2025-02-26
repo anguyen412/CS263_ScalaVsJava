@@ -17,7 +17,7 @@ class MyBenchmark {
     sum
   }
   
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+//  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
 //  def testArrayMod(): List[Int] = {
 //  }
 }
