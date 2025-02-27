@@ -1,0 +1,73 @@
+Even simpler(no functions):
+
+type ::= int | bool | string
+binop ::=  + | - | < | > | == | !=
+unary_op ::= ! | --
+exp ::= x | i | b | str | unop exp | exp binop exp
+stmt ::= type x = exp; |
+	 x = exp; |
+	 if (exp) stmt else stmt |
+	 while (exp) stmt |
+	 print(exp) |
+	 { stmt* } |
+program ::= stmt*
+
+
+type ::= int | bool | string
+primary_exp ::= x | i | b | str
+additive_op ::= + | -
+additive_exp ::= primary_exp (additive_op primary_exp)*
+comparison_op ::= < | >
+comparison_exp ::= additive_exp (comparison_op additive_exp)*
+equals_op ::= == | !=
+equals_exp ::= comparison_exp (equals_op comparison_exp)*
+unary_op ::= ! | --
+unary_exp ::= unary_op equals_exp | equals_exp
+exp ::= unary_exp
+stmt ::= type x = exp; |
+	 x = exp; |
+	 if (exp) stmt else stmt|
+	 while (exp) stmt |
+	 print(exp) |
+	 { stmt* } |
+	 exp
+program ::= stmt*
+
+============================================
+Original:
+
+type ::= int | bool | string | type => type
+unop ::= ! | -
+binop ::=  + | - | < | > | == | !=
+exp ::= x | i | bool | str | unop exp | exp binop exp | exp(exp) | (x*) => exp
+stmt ::= type x = exp; |
+	 x = exp; |
+	 if (exp) stmt else stmt |
+	 while (exp) stmt |
+	 print(exp*) |
+	 { stmt* } |
+program ::= stmt
+
+
+type ::= int | bool | string
+primary_exp ::= x | i | bool | str
+additive_op ::= + | -
+additive_exp ::= primary_exp (additive_op primary_exp)*
+comparison_op ::= < | >
+comparison_exp ::= additive_exp (comparison_op additive_exp)*
+equals_op ::= == | !=
+equals_exp ::= comparison_exp (equals_op comparison_exp)*
+unary_op ::= ! | -
+unary_exp ::= unary_op equals_exp | equals_exp
+call ::= func_exps(exp)
+hof ::= (x*) => {exp}
+func_exps ::= hof | call | unary_exp
+exp ::= unary_exp | func_exps
+stmt ::= type x = exp; |
+	 x = exp; |
+	 if (exp) stmt else stmt |
+	 while (exp) stmt |
+	 print(exp*) |
+	 { stmt* } |
+	 exp
+program ::= stmt
