@@ -1,0 +1,285 @@
+Classfile /C:/Users/nguye/Desktop/assignments/CS263_ScalaVsJava/scala/AddBinary/AddBinary$.class
+  Last modified Feb 26, 2025; size 1934 bytes
+  SHA-256 checksum c438761ed0919e3ec398edf7fe73fbced89dc2084835250d7911610240a1daa1
+  Compiled from "AddBinary.scala"
+public final class AddBinary$ implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // AddBinary$
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 1, methods: 5, attributes: 2
+Constant pool:
+   #1 = Utf8               AddBinary$
+   #2 = Class              #1             // AddBinary$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               java/io/Serializable
+   #6 = Class              #5             // java/io/Serializable
+   #7 = Utf8               AddBinary.scala
+   #8 = Utf8               MODULE$
+   #9 = Utf8               LAddBinary$;
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = NameAndType        #10:#11        // "<init>":()V
+  #13 = Methodref          #4.#12         // java/lang/Object."<init>":()V
+  #14 = Utf8               this
+  #15 = Utf8               <clinit>
+  #16 = Methodref          #2.#12         // AddBinary$."<init>":()V
+  #17 = NameAndType        #8:#9          // MODULE$:LAddBinary$;
+  #18 = Fieldref           #2.#17         // AddBinary$.MODULE$:LAddBinary$;
+  #19 = Utf8               writeReplace
+  #20 = Utf8               ()Ljava/lang/Object;
+  #21 = Utf8               scala/runtime/ModuleSerializationProxy
+  #22 = Class              #21            // scala/runtime/ModuleSerializationProxy
+  #23 = Utf8               (Ljava/lang/Class;)V
+  #24 = NameAndType        #10:#23        // "<init>":(Ljava/lang/Class;)V
+  #25 = Methodref          #22.#24        // scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+  #26 = Utf8               addBinary
+  #27 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #28 = Utf8               a
+  #29 = Utf8               b
+  #30 = Utf8               scala/collection/mutable/StringBuilder
+  #31 = Class              #30            // scala/collection/mutable/StringBuilder
+  #32 = Methodref          #31.#12        // scala/collection/mutable/StringBuilder."<init>":()V
+  #33 = Utf8               java/lang/String
+  #34 = Class              #33            // java/lang/String
+  #35 = Utf8               length
+  #36 = Utf8               ()I
+  #37 = NameAndType        #35:#36        // length:()I
+  #38 = Methodref          #34.#37        // java/lang/String.length:()I
+  #39 = Utf8               scala/collection/StringOps$
+  #40 = Class              #39            // scala/collection/StringOps$
+  #41 = Utf8               Lscala/collection/StringOps$;
+  #42 = NameAndType        #8:#41         // MODULE$:Lscala/collection/StringOps$;
+  #43 = Fieldref           #40.#42        // scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+  #44 = Utf8               scala/Predef$
+  #45 = Class              #44            // scala/Predef$
+  #46 = Utf8               Lscala/Predef$;
+  #47 = NameAndType        #8:#46         // MODULE$:Lscala/Predef$;
+  #48 = Fieldref           #45.#47        // scala/Predef$.MODULE$:Lscala/Predef$;
+  #49 = Utf8               augmentString
+  #50 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #51 = NameAndType        #49:#50        // augmentString:(Ljava/lang/String;)Ljava/lang/String;
+  #52 = Methodref          #45.#51        // scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+  #53 = Utf8               apply$extension
+  #54 = Utf8               (Ljava/lang/String;I)C
+  #55 = NameAndType        #53:#54        // apply$extension:(Ljava/lang/String;I)C
+  #56 = Methodref          #40.#55        // scala/collection/StringOps$.apply$extension:(Ljava/lang/String;I)C
+  #57 = Utf8               append
+  #58 = Utf8               (I)Lscala/collection/mutable/StringBuilder;
+  #59 = NameAndType        #57:#58        // append:(I)Lscala/collection/mutable/StringBuilder;
+  #60 = Methodref          #31.#59        // scala/collection/mutable/StringBuilder.append:(I)Lscala/collection/mutable/StringBuilder;
+  #61 = Utf8               reverse
+  #62 = NameAndType        #61:#20        // reverse:()Ljava/lang/Object;
+  #63 = Methodref          #31.#62        // scala/collection/mutable/StringBuilder.reverse:()Ljava/lang/Object;
+  #64 = Utf8               toString
+  #65 = Utf8               ()Ljava/lang/String;
+  #66 = NameAndType        #64:#65        // toString:()Ljava/lang/String;
+  #67 = Methodref          #31.#66        // scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+  #68 = Utf8               sum
+  #69 = Utf8               I
+  #70 = Utf8               sb
+  #71 = Utf8               Lscala/collection/mutable/StringBuilder;
+  #72 = Utf8               i
+  #73 = Utf8               j
+  #74 = Utf8               carry
+  #75 = Utf8               Ljava/lang/String;
+  #76 = Utf8               main
+  #77 = Utf8               ([Ljava/lang/String;)V
+  #78 = Utf8               args
+  #79 = Utf8               11
+  #80 = String             #79            // 11
+  #81 = Utf8               1
+  #82 = String             #81            // 1
+  #83 = NameAndType        #26:#27        // addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #84 = Methodref          #2.#83         // AddBinary$.addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #85 = Utf8               println
+  #86 = Utf8               (Ljava/lang/Object;)V
+  #87 = NameAndType        #85:#86        // println:(Ljava/lang/Object;)V
+  #88 = Methodref          #45.#87        // scala/Predef$.println:(Ljava/lang/Object;)V
+  #89 = Utf8               result
+  #90 = Utf8               [Ljava/lang/String;
+  #91 = Utf8               Code
+  #92 = Utf8               LineNumberTable
+  #93 = Utf8               LocalVariableTable
+  #94 = Utf8               StackMapTable
+  #95 = Utf8               MethodParameters
+  #96 = Utf8               Signature
+  #97 = Utf8               SourceFile
+  #98 = Utf8               Scala
+{
+  public static final AddBinary$ MODULE$;
+    descriptor: LAddBinary$;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class AddBinary$
+         3: dup
+         4: invokespecial #16                 // Method "<init>":()V
+         7: putstatic     #18                 // Field MODULE$:LAddBinary$;
+        10: return
+      LineNumberTable:
+        line 2: 0
+
+  public java.lang.String addBinary(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=8, args_size=3
+         0: new           #31                 // class scala/collection/mutable/StringBuilder
+         3: dup
+         4: invokespecial #32                 // Method scala/collection/mutable/StringBuilder."<init>":()V
+         7: astore_3
+         8: aload_1
+         9: invokevirtual #38                 // Method java/lang/String.length:()I
+        12: iconst_1
+        13: isub
+        14: istore        4
+        16: aload_2
+        17: invokevirtual #38                 // Method java/lang/String.length:()I
+        20: iconst_1
+        21: isub
+        22: istore        5
+        24: iconst_0
+        25: istore        6
+        27: iload         4
+        29: iconst_0
+        30: if_icmpge     45
+        33: iload         5
+        35: iconst_0
+        36: if_icmpge     45
+        39: iload         6
+        41: iconst_0
+        42: if_icmple     131
+        45: iload         6
+        47: istore        7
+        49: iload         4
+        51: iconst_0
+        52: if_icmplt     78
+        55: getstatic     #43                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+        58: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        61: aload_1
+        62: invokevirtual #52                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+        65: iload         4
+        67: invokevirtual #56                 // Method scala/collection/StringOps$.apply$extension:(Ljava/lang/String;I)C
+        70: bipush        49
+        72: if_icmpne     78
+        75: iinc          7, 1
+        78: iload         5
+        80: iconst_0
+        81: if_icmplt     107
+        84: getstatic     #43                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+        87: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        90: aload_2
+        91: invokevirtual #52                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+        94: iload         5
+        96: invokevirtual #56                 // Method scala/collection/StringOps$.apply$extension:(Ljava/lang/String;I)C
+        99: bipush        49
+       101: if_icmpne     107
+       104: iinc          7, 1
+       107: aload_3
+       108: iload         7
+       110: iconst_2
+       111: irem
+       112: invokevirtual #60                 // Method scala/collection/mutable/StringBuilder.append:(I)Lscala/collection/mutable/StringBuilder;
+       115: pop
+       116: iload         7
+       118: iconst_2
+       119: idiv
+       120: istore        6
+       122: iinc          4, -1
+       125: iinc          5, -1
+       128: goto          27
+       131: aload_3
+       132: invokevirtual #63                 // Method scala/collection/mutable/StringBuilder.reverse:()Ljava/lang/Object;
+       135: checkcast     #31                 // class scala/collection/mutable/StringBuilder
+       138: invokevirtual #67                 // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+       141: areturn
+      StackMapTable: number_of_entries = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 27
+          locals = [ class AddBinary$, class java/lang/String, class java/lang/String, class scala/collection/mutable/StringBuilder, int, int, int ]
+          stack = []
+        frame_type = 17 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 32
+          locals = [ int ]
+        frame_type = 28 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 23
+      LineNumberTable:
+        line 2: 0
+        line 3: 0
+        line 4: 8
+        line 5: 16
+        line 6: 24
+        line 8: 27
+        line 9: 45
+        line 10: 49
+        line 11: 75
+        line 13: 78
+        line 14: 104
+        line 16: 107
+        line 17: 116
+        line 18: 122
+        line 19: 125
+        line 22: 131
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           49      82     7   sum   I
+            8     134     3    sb   Lscala/collection/mutable/StringBuilder;
+           16     126     4     i   I
+           24     118     5     j   I
+           27     115     6 carry   I
+            0     142     0  this   LAddBinary$;
+            0     142     1     a   Ljava/lang/String;
+            0     142     2     b   Ljava/lang/String;
+    MethodParameters:
+      Name                           Flags
+      a                              final
+      b                              final
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=5, args_size=2
+         0: ldc           #80                 // String 11
+         2: astore_2
+         3: ldc           #82                 // String 1
+         5: astore_3
+         6: aload_0
+         7: aload_2
+         8: aload_3
+         9: invokevirtual #84                 // Method addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        12: astore        4
+        14: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        17: aload         4
+        19: invokevirtual #88                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+        22: return
+      LineNumberTable:
+        line 25: 0
+        line 26: 0
+        line 27: 3
+        line 28: 6
+        line 29: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            3      20     2     a   Ljava/lang/String;
+            6      17     3     b   Ljava/lang/String;
+           14       9     4 result   Ljava/lang/String;
+            0      23     0  this   LAddBinary$;
+            0      23     1  args   [Ljava/lang/String;
+    Signature: #77                          // ([Ljava/lang/String;)V
+    MethodParameters:
+      Name                           Flags
+      args                           final
+}
+SourceFile: "AddBinary.scala"
+  Scala: length = 0x0 (unknown attribute)
+

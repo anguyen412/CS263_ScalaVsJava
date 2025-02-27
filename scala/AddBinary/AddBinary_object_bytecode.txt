@@ -1,0 +1,17 @@
+Compiled from "AddBinary.scala"
+public final class AddBinary {
+  public static java.lang.String addBinary(java.lang.String, java.lang.String);
+    Code:
+       0: getstatic     #13                 // Field AddBinary$.MODULE$:LAddBinary$;
+       3: aload_0
+       4: aload_1
+       5: invokevirtual #15                 // Method AddBinary$.addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       8: areturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #13                 // Field AddBinary$.MODULE$:LAddBinary$;
+       3: aload_0
+       4: invokevirtual #19                 // Method AddBinary$.main:([Ljava/lang/String;)V
+       7: return
+}

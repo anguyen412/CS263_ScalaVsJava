@@ -1,0 +1,81 @@
+Compiled from "AddBinary.java"
+class AddBinary {
+  AddBinary();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  static java.lang.String addBinary(java.lang.String, java.lang.String);
+    Code:
+       0: new           #7                  // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #9                  // Method java/lang/StringBuilder."<init>":()V
+       7: astore_2
+       8: iconst_0
+       9: istore_3
+      10: aload_0
+      11: invokevirtual #10                 // Method java/lang/String.length:()I
+      14: iconst_1
+      15: isub
+      16: istore        4
+      18: aload_1
+      19: invokevirtual #10                 // Method java/lang/String.length:()I
+      22: iconst_1
+      23: isub
+      24: istore        5
+      26: iload         4
+      28: ifge          40
+      31: iload         5
+      33: ifge          40
+      36: iload_3
+      37: ifle          104
+      40: iload_3
+      41: istore        6
+      43: iload         4
+      45: iflt          62
+      48: aload_0
+      49: iload         4
+      51: invokevirtual #16                 // Method java/lang/String.charAt:(I)C
+      54: bipush        49
+      56: if_icmpne     62
+      59: iinc          6, 1
+      62: iload         5
+      64: iflt          81
+      67: aload_1
+      68: iload         5
+      70: invokevirtual #16                 // Method java/lang/String.charAt:(I)C
+      73: bipush        49
+      75: if_icmpne     81
+      78: iinc          6, 1
+      81: aload_2
+      82: iload         6
+      84: iconst_2
+      85: irem
+      86: invokevirtual #20                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      89: pop
+      90: iload         6
+      92: iconst_2
+      93: idiv
+      94: istore_3
+      95: iinc          4, -1
+      98: iinc          5, -1
+     101: goto          26
+     104: aload_2
+     105: invokevirtual #24                 // Method java/lang/StringBuilder.reverse:()Ljava/lang/StringBuilder;
+     108: invokevirtual #28                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     111: areturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #32                 // String 11
+       2: astore_1
+       3: ldc           #34                 // String 1
+       5: astore_2
+       6: getstatic     #36                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       9: aload_1
+      10: aload_2
+      11: invokestatic  #42                 // Method addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      14: invokevirtual #48                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      17: return
+}

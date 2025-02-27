@@ -1,0 +1,100 @@
+Compiled from "AddBinary.scala"
+public final class AddBinary$ implements java.io.Serializable {
+  public static final AddBinary$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #2                  // class AddBinary$
+       3: dup
+       4: invokespecial #16                 // Method "<init>":()V
+       7: putstatic     #18                 // Field MODULE$:LAddBinary$;
+      10: return
+
+  public java.lang.String addBinary(java.lang.String, java.lang.String);
+    Code:
+       0: new           #31                 // class scala/collection/mutable/StringBuilder
+       3: dup
+       4: invokespecial #32                 // Method scala/collection/mutable/StringBuilder."<init>":()V
+       7: astore_3
+       8: aload_1
+       9: invokevirtual #38                 // Method java/lang/String.length:()I
+      12: iconst_1
+      13: isub
+      14: istore        4
+      16: aload_2
+      17: invokevirtual #38                 // Method java/lang/String.length:()I
+      20: iconst_1
+      21: isub
+      22: istore        5
+      24: iconst_0
+      25: istore        6
+      27: iload         4
+      29: iconst_0
+      30: if_icmpge     45
+      33: iload         5
+      35: iconst_0
+      36: if_icmpge     45
+      39: iload         6
+      41: iconst_0
+      42: if_icmple     131
+      45: iload         6
+      47: istore        7
+      49: iload         4
+      51: iconst_0
+      52: if_icmplt     78
+      55: getstatic     #43                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+      58: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      61: aload_1
+      62: invokevirtual #52                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+      65: iload         4
+      67: invokevirtual #56                 // Method scala/collection/StringOps$.apply$extension:(Ljava/lang/String;I)C
+      70: bipush        49
+      72: if_icmpne     78
+      75: iinc          7, 1
+      78: iload         5
+      80: iconst_0
+      81: if_icmplt     107
+      84: getstatic     #43                 // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+      87: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      90: aload_2
+      91: invokevirtual #52                 // Method scala/Predef$.augmentString:(Ljava/lang/String;)Ljava/lang/String;
+      94: iload         5
+      96: invokevirtual #56                 // Method scala/collection/StringOps$.apply$extension:(Ljava/lang/String;I)C
+      99: bipush        49
+     101: if_icmpne     107
+     104: iinc          7, 1
+     107: aload_3
+     108: iload         7
+     110: iconst_2
+     111: irem
+     112: invokevirtual #60                 // Method scala/collection/mutable/StringBuilder.append:(I)Lscala/collection/mutable/StringBuilder;
+     115: pop
+     116: iload         7
+     118: iconst_2
+     119: idiv
+     120: istore        6
+     122: iinc          4, -1
+     125: iinc          5, -1
+     128: goto          27
+     131: aload_3
+     132: invokevirtual #63                 // Method scala/collection/mutable/StringBuilder.reverse:()Ljava/lang/Object;
+     135: checkcast     #31                 // class scala/collection/mutable/StringBuilder
+     138: invokevirtual #67                 // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+     141: areturn
+
+  public void main(java.lang.String[]);
+    Code:
+       0: ldc           #80                 // String 11
+       2: astore_2
+       3: ldc           #82                 // String 1
+       5: astore_3
+       6: aload_0
+       7: aload_2
+       8: aload_3
+       9: invokevirtual #84                 // Method addBinary:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      12: astore        4
+      14: getstatic     #48                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      17: aload         4
+      19: invokevirtual #88                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      22: return
+}
