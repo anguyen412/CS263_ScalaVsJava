@@ -30,12 +30,12 @@ javap -v [CLASSNAME].class > [CLASSNAME]_cp_and_bytecode.txt
 
 For using JMH:<br>
 For Java: <br>
-From the highest level of the directory (where the pom.xml file is, in the example it would be the folder first-benchmark) run the command `mvn clean install` <br>
+From the highest level of the directory (where the pom.xml file is, in the example it would be the folder java-benchmarks) run the command `mvn clean install` <br>
 Then run the tests using: `java -jar target/benchmarks.jar` <br>
 Tests should be written as methods inside src/main/java/jenkov/MyBenchmark.java <br>
 
 For Scala: <br>
-From the highest level of the directory (where the build.sbt file is, in the example it would be the folder benchmarks) run the command <br>
+From the highest level of the directory (where the build.sbt file is, in the example it would be the folder scala-benchmarks) run the command <br>
 `sbt jmh:compile` <br>
 Then run the tests using `sbt jmh:run`<br>
 Test should be written as functions inside src/main/scala/example/MyBenchmark.scala <br>
