@@ -4,6 +4,9 @@ import org.openjdk.jmh.infra.Blackhole;
 import org.openjdk.jmh.annotations.*;
 
 import java.util.concurrent.TimeUnit;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MyBenchmark {
     
@@ -58,6 +61,20 @@ public class MyBenchmark {
         } else {
             return false;
         }
+    }
+    
+    @State(Scope.Thread)
+    public static class ListModState {
+        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
+    }
+    
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    public List<Integer> testListMod(Blackhole blackhole, ListModState state) {
+        for (int i = 0; i < state.list.size(); i++) {
+            state.list.set(i, state.list.get(i)*2);
+        }
+        blackhole.consume(state.list);
+        return state.list;
     }
     
     //begin Alex written tests
