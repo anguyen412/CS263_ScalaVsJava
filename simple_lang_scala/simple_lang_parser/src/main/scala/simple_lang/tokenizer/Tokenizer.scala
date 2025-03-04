@@ -18,7 +18,9 @@ object Tokenizer extends RegexParsers {
         "(" ^^^ LeftParenToken |
         ")" ^^^ RightParenToken |
         "{" ^^^ LeftCurlyBraceToken |
-        "}" ^^^ RightCurlyBraceToken
+        "}" ^^^ RightCurlyBraceToken |
+        "=" ^^^ AssignmentToken |
+        ";" ^^^ SemicolonToken
     }
     
     def types: Parser[Token] = {

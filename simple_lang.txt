@@ -28,7 +28,7 @@ stmt ::= type x = exp; |
 	 x = exp; |
 	 if (exp) stmt else stmt|
 	 while (exp) stmt |
-	 print(exp) |
+	 print(exp); |
 	 { stmt* } |
 	 exp
 program ::= stmt*

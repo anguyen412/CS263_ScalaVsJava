@@ -35,3 +35,5 @@ case object LeftParenToken extends Token
 case object RightParenToken extends Token
 case object LeftCurlyBraceToken extends Token
 case object RightCurlyBraceToken extends Token
+case object AssignmentToken extends Token
+case object SemicolonToken extends Token
