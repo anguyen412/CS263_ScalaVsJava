@@ -48,6 +48,35 @@ class MyBenchmark {
       blackhole.consume(state.sum)
       state.sum
   }
+
+  def addBinary(a: String, b: String): String = {
+      val sb = new StringBuilder
+      var i = a.length - 1
+      var j = b.length - 1
+      var carry = 0
+
+      while (i >= 0 || j >= 0 || carry > 0) {
+          var sum = carry
+          if (i >= 0 && a(i) == '1') { 
+              sum += 1
+          }
+          if (j >= 0 && b(j) == '1') { 
+              sum += 1  
+          }
+          sb.append(sum % 2)
+          carry = sum / 2
+          i -= 1
+          j -= 1
+      }
+      sb.reverse.toString()
+  }
+
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  def testAddBinary(blackhole: Blackhole, state: MyBenchmark.BinaryState): String = {
+      val result = addBinary(state.a, state.b)
+      blackhole.consume(result)
+      result
+  }
 }
 
 object MyBenchmark {
@@ -69,5 +98,11 @@ object MyBenchmark {
     @State(Scope.Thread)
     class ListModState {
         val list = List(1,2,3)
+    }
+
+    @State(Scope.Thread)
+    class BinaryState {
+      val a = "1101"
+      val b = "0011"
     }
 }
