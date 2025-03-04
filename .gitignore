@@ -1,4 +1,4 @@
 .DS_Store
 *.tasty
-/first-benchmark/target
-/benchmarks/target
+/java-benchmarks/target
+/scala-benchmarks/target

@@ -1,4 +1,0 @@
-JMH S 22 com.jenkov.MyBenchmark S 57 com.jenkov.jmh_generated.MyBenchmark_testArrayMod_jmhTest S 12 testArrayMod S 14 SingleShotTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
-JMH S 22 com.jenkov.MyBenchmark S 53 com.jenkov.jmh_generated.MyBenchmark_testLoop_jmhTest S 8 testLoop S 14 SingleShotTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
-JMH S 22 com.jenkov.MyBenchmark S 59 com.jenkov.jmh_generated.MyBenchmark_testPalindrome_jmhTest S 14 testPalindrome S 14 SingleShotTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
-JMH S 22 com.jenkov.MyBenchmark S 68 com.jenkov.jmh_generated.MyBenchmark_testPalindromeRecurisve_jmhTest S 23 testPalindromeRecurisve S 14 SingleShotTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 

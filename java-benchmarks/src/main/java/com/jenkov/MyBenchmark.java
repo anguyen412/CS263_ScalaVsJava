@@ -60,14 +60,20 @@ public class MyBenchmark {
         }
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
-    public long testLoop(Blackhole blackhole) {
+    //begin Alex written tests
+    
+    @State(Scope.Thread)
+    public static class LoopState {
         long sum = 0;
+    }
+    
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    public long testLoop(Blackhole blackhole, LoopState state) {
         for (long i = 0; i < 1_000_000_000L; i++) {
-            sum += i;
+            state.sum += i;
         }
-        blackhole.consume(sum);
-        return sum;
+        blackhole.consume(state.sum);
+        return state.sum;
     }
     
 }
