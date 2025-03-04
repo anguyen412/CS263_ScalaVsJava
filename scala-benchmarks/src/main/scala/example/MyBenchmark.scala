@@ -34,6 +34,11 @@ class MyBenchmark {
       retVal
   }
   
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  def testListMod(blackhole: Blackhole, state: MyBenchmark.ListModState): List[Int] = {
+      state.list.map(x => x * 2)
+  }
+  
   //begin Alex written tests
   @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
   def testLoop(blackhole: Blackhole, state: MyBenchmark.LoopState): Long = {
@@ -88,6 +93,11 @@ object MyBenchmark {
     @State(Scope.Thread)
     class LoopState {
         var sum: Long = 0
+    }
+    
+    @State(Scope.Thread)
+    class ListModState {
+        val list = List(1,2,3)
     }
 
     @State(Scope.Thread)
