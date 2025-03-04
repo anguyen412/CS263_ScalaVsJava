@@ -12,10 +12,22 @@ public class MyBenchmark {
     
     @State(Scope.Thread)
     public static class ArrayModState {
-        public int[] list = {1,2,3};
+        public int[] list = new int[1_000_000_000];
+        
+        @Setup(Level.Iteration)
+        public void doSetup() {
+            for (int i = 0; i < list.length; i++) {
+                list[i] = i;
+            }
+        }
+        
+        @TearDown(Level.Iteration)
+        public void doTeardown() {
+            System.gc();
+        }
     }
 
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.SECONDS)
     public int[] testArrayMod(Blackhole blackhole, ArrayModState state) {
         for (int i = 0; i < state.list.length; i++) {
             state.list[i] = state.list[i] * 2;
@@ -29,7 +41,7 @@ public class MyBenchmark {
         String str = "hi";
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    //@Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
     public boolean testPalindrome(PalindromeState state, Blackhole blackhole) {
         int length = state.str.length();
         boolean result = false;
@@ -45,7 +57,7 @@ public class MyBenchmark {
         return result;
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    //@Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
     public Boolean testPalindromeRecurisve(Blackhole blackhole, PalindromeState state) {
         Boolean returnVal = isPalindrome(state.str);
         blackhole.consume(returnVal);
@@ -68,7 +80,7 @@ public class MyBenchmark {
         List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3));
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    //@Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
     public List<Integer> testListMod(Blackhole blackhole, ListModState state) {
         for (int i = 0; i < state.list.size(); i++) {
             state.list.set(i, state.list.get(i)*2);
@@ -84,7 +96,7 @@ public class MyBenchmark {
         long sum = 0;
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.SECONDS)
     public long testLoop(Blackhole blackhole, LoopState state) {
         for (long i = 0; i < 1_000_000_000L; i++) {
             state.sum += i;
