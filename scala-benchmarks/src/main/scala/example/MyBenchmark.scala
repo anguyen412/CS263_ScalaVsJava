@@ -6,14 +6,14 @@ import java.util.concurrent.TimeUnit
 
 class MyBenchmark {
   
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testArrayMod(blackhole: Blackhole, state: MyBenchmark.ArrayModState): Array[Int] = {
       state.array.map(_ * 2)
       blackhole.consume(state.array)
       state.array
   }
   
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testPalindrome(blackhole: Blackhole, state: MyBenchmark.PalindromeState): Boolean = {
       if (state.palin == state.palin.reverse) { true } else { false }
   }
@@ -27,20 +27,20 @@ class MyBenchmark {
       } else { false }
   }
   
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testPalindromeRecursive(blackhole: Blackhole, state: MyBenchmark.PalindromeRState): Boolean = {
       val retVal = isPalindrome(state.palin)
       blackhole.consume(retVal)
       retVal
   }
   
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testListMod(blackhole: Blackhole, state: MyBenchmark.ListModState): List[Int] = {
       state.list.map(x => x * 2)
   }
   
   //begin Alex written tests
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testLoop(blackhole: Blackhole, state: MyBenchmark.LoopState): Long = {
       for (i <- 0L until 1_000_000_000L) {
           state.sum += i
@@ -71,7 +71,7 @@ class MyBenchmark {
       sb.reverse.toString()
   }
 
-  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime))
+  @Benchmark @OutputTimeUnit(TimeUnit.MILLISECONDS) @BenchmarkMode(Array(Mode.SingleShotTime)) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
   def testAddBinary(blackhole: Blackhole, state: MyBenchmark.BinaryState): String = {
       val result = addBinary(state.a, state.b)
       blackhole.consume(result)
@@ -119,7 +119,7 @@ object MyBenchmark {
         
         @Setup(Level.Iteration)
         def doSetup(): Unit = {
-            val range = Range(1,15000)
+            val range = Range(1,5000)
             for (r <- range) {
                 palin += "a"
             }

@@ -1,8 +1,8 @@
 Sizes of things that should be consistent accross the java and scala implementations:
 
 ArrayMod: 1,000,000 - scala issue run out of memory
-Palindrome: 100,000 - scala issue, jmh hanging, java can easily do 1,000,000
-PalindromeRecursive: 15,000 - scala and java issue, stack overflow
+Palindrome: 100,000 - scala issue, jmh hanging, java jmh taking forever
+PalindromeRecursive: 5,000 - scala and java issue, stack overflow, scala worse
 ListMod: 1,000,000
 Loop: 1,000,000,000
 addBinary: 

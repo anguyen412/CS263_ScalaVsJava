@@ -27,7 +27,7 @@ public class MyBenchmark {
         }
     }
 
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public int[] testArrayMod(Blackhole blackhole, ArrayModState state) {
         for (int i = 0; i < state.list.length; i++) {
             state.list[i] = state.list[i] * 2;
@@ -42,7 +42,7 @@ public class MyBenchmark {
         
         @Setup(Level.Iteration)
         public void doSetup() {
-            for (int i = 0; i < 1_000_000; i++) {
+            for (int i = 0; i < 100_000; i++) {
                 str += "a";
             }
         }
@@ -60,7 +60,7 @@ public class MyBenchmark {
         
         @Setup(Level.Iteration)
         public void doSetup() {
-            for (int i = 0; i < 15_000; i++) {
+            for (int i = 0; i < 5_000; i++) {
                 str += "a";
             }
         }
@@ -72,7 +72,7 @@ public class MyBenchmark {
         
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public boolean testPalindrome(PalindromeState state, Blackhole blackhole) {
         int length = state.str.length();
         boolean result = false;
@@ -88,7 +88,7 @@ public class MyBenchmark {
         return result;
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public Boolean testPalindromeRecurisve(Blackhole blackhole, PalindromeRState state) {
         Boolean returnVal = isPalindrome(state.str);
         blackhole.consume(returnVal);
@@ -123,7 +123,7 @@ public class MyBenchmark {
         }
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public List<Integer> testListMod(Blackhole blackhole, ListModState state) {
         for (int i = 0; i < state.list.size(); i++) {
             state.list.set(i, state.list.get(i)*2);
@@ -139,7 +139,7 @@ public class MyBenchmark {
         long sum = 0;
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public long testLoop(Blackhole blackhole, LoopState state) {
         for (long i = 0; i < 1_000_000_000L; i++) {
             state.sum += i;
@@ -180,7 +180,7 @@ public class MyBenchmark {
         }
     }
     
-    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    @Benchmark @BenchmarkMode(Mode.SingleShotTime) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Fork(value = 1)// @Warmup(iterations = 2, time = 5)
     public String testAddBinary(Blackhole blackhole, BinaryState state) {
         String result = addBinary(state.a, state.b);
         blackhole.consume(result);

@@ -1,0 +1,195 @@
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testAddBinary
+
+# Run progress: 0.00% complete, ETA 00:06:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.005 ms/op
+# Warmup Iteration   2: 0.005 ms/op
+Iteration   1: 0.005 ms/op
+Iteration   2: 0.005 ms/op
+Iteration   3: 0.005 ms/op
+Iteration   4: 0.005 ms/op
+Iteration   5: 0.005 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testAddBinary":
+  0.005 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.005, 0.005, 0.005), stdev = 0.001
+  CI (99.9%): [0.005, 0.005] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testArrayMod
+
+# Run progress: 16.67% complete, ETA 00:05:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.116 ms/op
+# Warmup Iteration   2: 0.116 ms/op
+Iteration   1: 0.116 ms/op
+Iteration   2: 0.116 ms/op
+Iteration   3: 0.116 ms/op
+Iteration   4: 0.116 ms/op
+Iteration   5: 0.116 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testArrayMod":
+  0.116 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.116, 0.116, 0.116), stdev = 0.001
+  CI (99.9%): [0.115, 0.116] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testListMod
+
+# Run progress: 33.33% complete, ETA 00:04:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.570 ms/op
+# Warmup Iteration   2: 23.211 ms/op
+Iteration   1: 34.865 ms/op
+Iteration   2: 46.612 ms/op
+Iteration   3: 59.015 ms/op
+Iteration   4: 71.347 ms/op
+Iteration   5: 83.586 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testListMod":
+  59.085 ±(99.9%) 74.389 ms/op [Average]
+  (min, avg, max) = (34.865, 59.085, 83.586), stdev = 19.319
+  CI (99.9%): [≈ 0, 133.474] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testLoop
+
+# Run progress: 50.00% complete, ETA 00:03:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 605.850 ms/op
+# Warmup Iteration   2: 541.936 ms/op
+Iteration   1: 541.981 ms/op
+Iteration   2: 541.976 ms/op
+Iteration   3: 541.967 ms/op
+Iteration   4: 542.086 ms/op
+Iteration   5: 541.974 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testLoop":
+  541.997 ±(99.9%) 0.193 ms/op [Average]
+  (min, avg, max) = (541.967, 541.997, 542.086), stdev = 0.050
+  CI (99.9%): [541.804, 542.190] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testPalindrome
+
+# Run progress: 66.67% complete, ETA 00:02:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.069 ms/op
+# Warmup Iteration   2: 0.138 ms/op
+Iteration   1: 0.239 ms/op
+Iteration   2: 0.285 ms/op
+Iteration   3: 0.355 ms/op
+Iteration   4: 0.427 ms/op
+Iteration   5: 0.498 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testPalindrome":
+  0.361 ±(99.9%) 0.403 ms/op [Average]
+  (min, avg, max) = (0.239, 0.361, 0.498), stdev = 0.105
+  CI (99.9%): [≈ 0, 0.764] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.14, Java HotSpot(TM) 64-Bit Server VM, 17.0.14+8-LTS-191
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-17.0.14.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 5 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.jenkov.MyBenchmark.testPalindromeRecurisve
+
+# Run progress: 83.33% complete, ETA 00:01:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.345 ms/op
+# Warmup Iteration   2: 1.411 ms/op
+Iteration   1: 3.233 ms/op
+Iteration   2: 6.285 ms/op
+Iteration   3: 10.381 ms/op
+Iteration   4: 15.327 ms/op
+Iteration   5: 21.301 ms/op
+
+
+Result "com.jenkov.MyBenchmark.testPalindromeRecurisve":
+  11.305 ±(99.9%) 27.720 ms/op [Average]
+  (min, avg, max) = (3.233, 11.305, 21.301), stdev = 7.199
+  CI (99.9%): [≈ 0, 39.026] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                            Mode  Cnt    Score    Error  Units
+MyBenchmark.testAddBinary            avgt    5    0.005 ±  0.001  ms/op
+MyBenchmark.testArrayMod             avgt    5    0.116 ±  0.001  ms/op
+MyBenchmark.testListMod              avgt    5   59.085 ± 74.389  ms/op
+MyBenchmark.testLoop                 avgt    5  541.997 ±  0.193  ms/op
+MyBenchmark.testPalindrome           avgt    5    0.361 ±  0.403  ms/op
+MyBenchmark.testPalindromeRecurisve  avgt    5   11.305 ± 27.720  ms/op
