@@ -1,0 +1,20 @@
+Measured using Measure-Command in Windows Powershell
+
+Test                        Compile Time (ms)
+AddBinary                   2663.9948
+ArrayMod                    2576.1904
+ListMod                     2363.2082
+Loop                        2562.5868
+Palindrome                  2104.0234
+PalindromeRecursive         2275.538
+
+
+Bytecode Length:
+
+Test                        Lines
+AddBinary                   101
+ArrayMod                    60
+ListMod                     49
+Loop                        62
+Palindrome                  52
+PalindromeRecursive         69
