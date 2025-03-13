@@ -3,12 +3,6 @@ package simple_lang.tokenizer;
 import java.util.*;
 import java.util.regex.*;
 
-class TokenizerException extends Exception {
-    public TokenizerException(String message) {
-        super(message);
-    }
-}
-
 public class Tokenizer {
 
     // Reserved words
