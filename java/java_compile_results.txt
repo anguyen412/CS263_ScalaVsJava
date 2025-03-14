@@ -1,15 +1,12 @@
+Measured using 'Measure-Command { javac filename.java }' in Windows Powershell
 
-Compile Times:
-
-Measured using Measure-Command in Windows Powershell
-
-Test                        Compile Time (ms)
-AddBinary                   520.469
-ArrayMod                    384.0502
-ListMod                     426.0332
-Loop                        385.1194
-Palindrome                  392.7991
-PalindromeRecursive         425.3302
+Test                        Average Compile Time (ms)
+AddBinary                   401.3477
+ArrayMod                    365.4986
+ListMod                     410.2168
+Loop                        413.2391
+Palindrome                  374.2851
+PalindromeRecursive         391.4946
 
 
 Bytecode Length:

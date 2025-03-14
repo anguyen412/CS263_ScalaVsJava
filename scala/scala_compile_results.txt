@@ -1,12 +1,12 @@
-Measured using Measure-Command in Windows Powershell
+Measured using 'Measure-Command { scalac filename.scala }' in Windows Powershell
 
-Test                        Compile Time (ms)
-AddBinary                   2663.9948
-ArrayMod                    2576.1904
-ListMod                     2363.2082
-Loop                        2562.5868
-Palindrome                  2104.0234
-PalindromeRecursive         2275.538
+Test                        Average Compile Time (ms)
+AddBinary                   2413.1563
+ArrayMod                    2527.2859
+ListMod                     2387.2708
+Loop                        2481.1973
+Palindrome                  2224.5180
+PalindromeRecursive         2279.6248
 
 
 Bytecode Length:
