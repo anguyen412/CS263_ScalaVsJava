@@ -18,3 +18,13 @@ ListMod                     49
 Loop                        62
 Palindrome                  52
 PalindromeRecursive         69
+
+$.class Bytecode Length:
+
+Test                        Lines
+AddBinary                   284
+ArrayMod                    269
+ListMod                     229
+Loop                        272
+Palindrome                  189
+PalindromeRecursive         213
