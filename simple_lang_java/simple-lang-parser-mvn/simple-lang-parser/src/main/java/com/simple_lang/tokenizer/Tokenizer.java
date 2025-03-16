@@ -133,7 +133,8 @@ public class Tokenizer {
 
     // Implementation of apply method in Tokenizer.scala
     public static List<Token> apply(String code) throws TokenizerException {
-        List<Token> tokens = tokens(code);
+        String noWhitespaceCode = code.replaceAll("\\s+", "");
+        List<Token> tokens = tokens(noWhitespaceCode);
         if (tokens == null) {
             throw new TokenizerException("Failure");
         }
