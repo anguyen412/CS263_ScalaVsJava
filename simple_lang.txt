@@ -30,7 +30,6 @@ stmt ::= type x = exp; |
 	 while (exp) stmt |
 	 print(exp); |
 	 { stmt* } |
-	 exp
 program ::= stmt*
 
 ============================================

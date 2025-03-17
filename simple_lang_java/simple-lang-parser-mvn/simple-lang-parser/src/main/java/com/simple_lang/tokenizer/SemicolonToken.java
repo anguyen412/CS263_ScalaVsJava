@@ -6,4 +6,8 @@ public class SemicolonToken implements Token {
     public String toString() {
         return ";";
     }
+    
+    public boolean equals(final Object object) {
+        return object instanceof SemicolonToken;
+    }
 }

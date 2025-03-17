@@ -53,23 +53,48 @@ public class Tokenizer {
 
      // Expressions
     private static Token expressions(String code) {
+        //System.out.println("Current exp in expressions: " + code);
         if (code.startsWith("true")) return new TrueBooleanLiteralToken();
         if (code.startsWith("false")) return new FalseBooleanLiteralToken();
+        
+        Pattern p = Pattern.compile("[a-zA-Z_][a-zA-Z0-9_]*");
+        Matcher m = p.matcher(code);
+        if (m.find()) {
+            String s = m.group();
+            //System.out.println("We matched: " + s);
+            return new VariableToken(s);
+        }
+        
+        Pattern p1 = Pattern.compile("[0-9]+");
+        Matcher m1 = p1.matcher(code);
+        if (m1.find()) {
+            String s1 = m1.group();
+            //System.out.println("We matched: " + s1);
+            return new IntegerLiteralToken(s1);
+        }
+        
+        Pattern p2 = Pattern.compile("\"[^\"]*\"");
+        Matcher m2 = p2.matcher(code);
+        if (m2.find()) {
+            String s2 = m2.group();
+            //System.out.println("We matched: " + s2);
+            return new StringLiteralToken(s2);
+        }
 
-        Matcher integerMatcher = Pattern.compile("[0-9]+").matcher(code);
-        if (integerMatcher.find()) return new IntegerLiteralToken(integerMatcher.group());
+        //Matcher integerMatcher = Pattern.compile("[0-9]+").matcher(code);
+        //if (integerMatcher.find()) return new IntegerLiteralToken(integerMatcher.group());
 
-        Matcher stringMatcher = Pattern.compile("\"[^\"]*\"").matcher(code);
-        if (stringMatcher.find()) return new StringLiteralToken(stringMatcher.group());
+        //Matcher stringMatcher = Pattern.compile("\"[^\"]*\"").matcher(code);
+        //if (stringMatcher.find()) return new StringLiteralToken(stringMatcher.group());
 
-        Matcher variableMatcher = Pattern.compile("[a-zA-Z_][a-zA-Z0-9_]*").matcher(code);
-        if (variableMatcher.find()) return new VariableToken(variableMatcher.group());
+        //Matcher variableMatcher = Pattern.compile("[a-zA-Z_][a-zA-Z0-9_]*").matcher(code);
+        //if (variableMatcher.find()) return new VariableToken(variableMatcher.group());
 
         return null;
     }
 
     // Implementation of tokens in Tokenizer.scala
-    public static List<Token> tokens(String code) {
+    public static List<Token> tokenize(String code) {
         List<Token> tokens = new ArrayList<>();
         int index = 0;
 
@@ -79,8 +104,12 @@ public class Tokenizer {
             // Match each substring to a token type
             String substring = code.substring(index);
 
+            //System.out.println("Remaining tokens: " + substring);
+            //System.out.println("Current list: " + tokens.toString());
+            
             Token token = reservedWords(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this reserved word: " + token.toString());
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -88,6 +117,7 @@ public class Tokenizer {
 
             token = reservedSymbols(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this symbol: " + token.toString());
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -95,6 +125,7 @@ public class Tokenizer {
 
             token = types(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this type: " + token.toString());
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -102,6 +133,7 @@ public class Tokenizer {
 
             token = binaryOps(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this binaryOp: " + token.toString());
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -109,6 +141,7 @@ public class Tokenizer {
 
             token = unaryOps(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this unaryOp: " + token.toString());
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -116,6 +149,8 @@ public class Tokenizer {
 
             token = expressions(substring);
             if (token != null) {
+                //System.out.println("Successfully tokenized this exp: " + token.toString());
+                //System.out.println("Token type variable???: " + (token instanceof VariableToken));
                 tokens.add(token);
                 index += token.getLength();
                 continue;
@@ -134,7 +169,8 @@ public class Tokenizer {
     // Implementation of apply method in Tokenizer.scala
     public static List<Token> apply(String code) throws TokenizerException {
         String noWhitespaceCode = code.replaceAll("\\s+", "");
-        List<Token> tokens = tokens(noWhitespaceCode);
+        //System.out.println(noWhitespaceCode);
+        List<Token> tokens = tokenize(noWhitespaceCode);
         if (tokens == null) {
             throw new TokenizerException("Failure");
         }

@@ -2,3 +2,4 @@
 *.tasty
 /java-benchmarks/target
 /scala-benchmarks/target
+simple_lang_java/simple-lang-parser-mvn/simple-lang-parser/target

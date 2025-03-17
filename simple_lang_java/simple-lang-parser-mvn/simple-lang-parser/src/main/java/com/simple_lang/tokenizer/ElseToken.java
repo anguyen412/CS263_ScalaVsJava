@@ -6,4 +6,8 @@ public class ElseToken implements Token {
     public String toString() {
         return "else";
     }
+    
+    public boolean equals(final Object other) {
+        return other instanceof ElseToken;
+    }
 }
